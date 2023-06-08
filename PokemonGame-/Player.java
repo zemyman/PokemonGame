@@ -84,6 +84,14 @@ public class Player extends Actor
         setLocation(getX() +  deltaX , getY() + deltaY);
         
     }
+    public static void whatS(int start){
+        
+        spawn.pokemonDisplay(start);
+        Forest.pokemonDisplay(start);
+        Battle.pokemon1U(start);
+        PlayerFight.pokemon1U(start);
+        
+    }
 }
     
  

@@ -8,6 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Forest extends World
 {
+    public boolean display = true;
+    public boolean ball1 = true;
+    public boolean ball2 = true;
+    public boolean ball3 = true;
+    public  static int pokemon1;
+    public  static int pokemon2;
+    public  static int pokemon3;
+    public static void pokemonDisplay(int pokemon){
+        pokemon1 = pokemon;
+    }
 
     /**
      * Constructor for objects of class Forest.
@@ -60,5 +70,34 @@ public class Forest extends World
         addObject(new SmallHbounds(),307, 192);
         //warps
         addObject(new SpawnWarp(),236, 376);
+        addObject(new WanderingPokemon1(),293, 208);
+        
+         if(display = true){
+            if(pokemon1 == 1){
+            addObject(new Bulbasur(),395, 360);
+            
+         }
+         else if(pokemon1 == 2){
+            addObject(new Charmander(),395, 360);
+            
+         }
+          else if(pokemon1 == 3){
+            addObject(new Squirtle(),395, 360);
+            
+         }
+          else if(pokemon1 == 4){
+            
+         }
+          else if(pokemon1 == 5){
+            
+         }
+          else{
+            addObject(new PokeballSprite(),395, 360);
+         }
+            
+            addObject(new PokeballSprite(),317, 357);
+            addObject(new PokeballSprite(),356, 358);
+          }
     }
+    
 }

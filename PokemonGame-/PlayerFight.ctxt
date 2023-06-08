@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PlayerFight
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PlayerFight\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=poke
+comment1.target=void\ pokemon1U(int)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ PlayerFight\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3
