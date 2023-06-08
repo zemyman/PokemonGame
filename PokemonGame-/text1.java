@@ -23,7 +23,7 @@ public class text1 extends Actor
         }
         else if(Greenfoot.isKeyDown("2")){
             Player.whatS(2);
-            Greenfoot.delay(10);
+            Greenfoot.delay(3);
             Greenfoot.setWorld(w);
         }
         else if(Greenfoot.isKeyDown("3") ){

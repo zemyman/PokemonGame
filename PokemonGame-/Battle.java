@@ -42,11 +42,11 @@ public class Battle extends World
         if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),395, 360);
-            
+            addObject(new BulbasurFight(),240, 284);
          }
          else if(pokemon1 == 2){
             addObject(new Charmander(),395, 360);
-            
+            addObject(new CharmanderFight(),240, 284);
          }
           else if(pokemon1 == 3){
             addObject(new Squirtle(),395, 360);
@@ -68,7 +68,16 @@ public class Battle extends World
             addObject(new PokeballSprite(),356, 360);
           }
          addObject(new throwBall(),163,375);
-             
+         int randP = Greenfoot.getRandomNumber(3);
+         if(randP == 1 || randP==0){
+             addObject(new BulbasurFight2(),10,154);
+         }
+         if(randP == 2){
+             addObject(new SquirtleFight2(),10,154);
+         }
+         if(randP == 3){
+             addObject(new CharmanderFight(),10,154);
+         }
     }
        
 }
