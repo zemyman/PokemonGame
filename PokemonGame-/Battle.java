@@ -68,7 +68,7 @@ public class Battle extends World
             addObject(new PokeballSprite(),356, 360);
           }
          addObject(new throwBall(),163,375);
-         int randP = Greenfoot.getRandomNumber(3);
+         int randP = Greenfoot.getRandomNumber(4);
          if(randP == 1 || randP==0){
              addObject(new BulbasurFight2(),10,154);
          }
@@ -76,7 +76,7 @@ public class Battle extends World
              addObject(new SquirtleFight2(),10,154);
          }
          if(randP == 3){
-             addObject(new CharmanderFight(),10,154);
+             addObject(new CharmanderFight2(),10,154);
          }
     }
        

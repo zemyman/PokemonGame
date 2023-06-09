@@ -30,6 +30,8 @@ public class spawn extends World
         
         //ADDING PLAYER
         addObject(new Player(),500, 163);
+        
+        
         //BOUNDS
         addObject(new Bounds(),378, 288);
         addObject(new BoundsSide(),524, 141);
@@ -43,6 +45,7 @@ public class spawn extends World
         addObject(new SmallHbounds(),434,170);
         //Waprs
         addObject(new forestWarp(),486,259);
+        addObject(new pokemonCenterTp(),151, 156);
         if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),98, 293);
