@@ -1,22 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class pokemonCenter here.
+ * Write a description of class PokemonCenter1 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class pokemonCenter extends World
+public class PokemonCenter1 extends World
 {
 
     /**
-     * Constructor for objects of class pokemonCenter.
+     * Constructor for objects of class PokemonCenter1.
      * 
      */
-    public pokemonCenter()
+    public PokemonCenter1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        
         addObject(new Bounds(),152, 25);
         addObject(new Bounds(),447, 25);
         addObject(new Bounds(),450, 368);
