@@ -22,27 +22,27 @@ public class Player extends Actor
        //Movement
        if(isTouching(Wall.class)){
             if(Greenfoot.isKeyDown("a")){
-                setLocation(getX()  + speed , getY());
+                setLocation(getX()  + speed + 1 , getY());
             }
             if(Greenfoot.isKeyDown("w")){
-                setLocation(getX()  , getY() + speed);
+                setLocation(getX()  , getY() + speed + 1);
             }
             if(Greenfoot.isKeyDown("s")){
-                setLocation(getX()  , getY() - speed);
+                setLocation(getX()  , getY() - speed - 1);
             }
             if(Greenfoot.isKeyDown("d")){
-                setLocation(getX() - speed , getY());
+                setLocation(getX() - speed - 1, getY());
             }
         }
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("s")){
           
           if (Greenfoot.isKeyDown("w")){
             deltaY = speed * -1;
-            setImage(north);
+            //setImage(north);
             }
             else if (Greenfoot.isKeyDown("s")){
             deltaY = speed;
-            setImage(south);
+            //setImage(south);
             }
                    }
          else{
@@ -51,12 +51,12 @@ public class Player extends Actor
         if(Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("d")) {
            
            if (Greenfoot.isKeyDown("a")){
-            deltaX = speed * -1;
-            setImage(west);
+            deltaX = speed * -1 ;
+            //setImage(west);
             }
             else if (Greenfoot.isKeyDown("d")){
             deltaX = speed;
-            setImage(east);
+            //setImage(east);
             }
        
         
