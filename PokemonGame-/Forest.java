@@ -26,50 +26,27 @@ public class Forest extends World
     public Forest()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(480, 400, 1, false); 
+        super(480, 480, 1, false); 
         //Adding player
         addObject(new Player(),216, 8);
         //adding bounds
-        addObject(new BoundsSide(),259, 390);
-        
-        addObject(new smallVBound(),198, 88);
-        addObject(new smallVBound(),202, 143);
-        addObject(new smallVBound(),233, 133);
-        addObject(new smallVBound(),153, 177);
-        addObject(new smallVBound(),137, 214);
-        addObject(new smallVBound(),91, 272);
-        addObject(new smallVBound(),91, 328);
-        addObject(new smallVBound(),162, 331);
-        
-        addObject(new SmallHbounds(),168, 58);
-        addObject(new SmallHbounds(),207, 102);
-        addObject(new SmallHbounds(),205, 119);
-        addObject(new SmallHbounds(),206, 157);
-        addObject(new SmallHbounds(),175, 172);
-        addObject(new SmallHbounds(),125, 205);
-        addObject(new SmallHbounds(),111, 240);
-        addObject(new SmallHbounds(),81, 357);
-        
-        addObject(new smallVBound(),216, 327);
-        addObject(new smallVBound(),216, 372);
-        addObject(new smallVBound(),258, 393);
-        addObject(new smallVBound(),415, 216);
-        addObject(new smallVBound(),414, 168);
-        addObject(new smallVBound(),358, 166);
-        addObject(new smallVBound(),281, 166);
-        addObject(new smallVBound(),281, 58);
-        addObject(new smallVBound(),281, 114);
-        
-        addObject(new SmallHbounds(),134, 357);
-        addObject(new SmallHbounds(),187, 300);
-        addObject(new SmallHbounds(),286, 241);
-        addObject(new SmallHbounds(),344, 242);
-        addObject(new SmallHbounds(),387, 242);
-        addObject(new SmallHbounds(),386, 142);
-        addObject(new SmallHbounds(),331, 192);
-        addObject(new SmallHbounds(),307, 192);
+        addObject(new Wall(108, 255), 134, 125);
+        addObject(new Wall(30, 138), 203, 136);
+        addObject(new Wall(19, 45), 227, 137);
+        addObject(new Wall(15, 81), 87, 293);
+        addObject(new Wall(65, 12), 112, 340);
+        addObject(new Wall(63, 176), 176, 392);
+        addObject(new Wall(15, 115), 280, 422);
+        addObject(new Wall(128, 122), 320, 304);
+        addObject(new Wall(31, 33), 399, 243);
+        addObject(new Wall(15, 69), 407, 192);
+        addObject(new Wall(111, 63), 359, 126);
+        addObject(new Wall(77, 63), 311, 160);
+        addObject(new Wall(45, 48), 296, 71);
+        addObject(new Wall(15, 63), 266, 31);
+
         //warps
-        addObject(new SpawnWarp(),236, 376);
+        addObject(new ForestToSpawnWarp(),240, 470);
         addObject(new WanderingPokemon1(),293, 208);
         
          if(display = true){
