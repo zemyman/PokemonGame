@@ -30,7 +30,7 @@ public class Forest extends World
         //Adding player
         addObject(new Player(),216, 8);
         //adding bounds
-        addObject(new Wall(108, 255), 134, 125);
+        /*addObject(new Wall(108, 255), 134, 125);
         addObject(new Wall(30, 138), 203, 136);
         addObject(new Wall(19, 45), 227, 137);
         addObject(new Wall(15, 81), 87, 293);
@@ -44,6 +44,13 @@ public class Forest extends World
         addObject(new Wall(77, 63), 311, 160);
         addObject(new Wall(45, 48), 296, 71);
         addObject(new Wall(15, 63), 266, 31);
+         */
+        addObject(new BorderV(10,254), 181,126);
+    
+        addObject(new BorderV(10,145), 213,136);
+        addObject(new BorderV(10,90), 90,293);
+        addObject(new BorderV(10,178), 203,388);
+        addObject(new BorderV(10,286), 246,351);
 
         //warps
         addObject(new ForestToSpawnWarp(),240, 470);
