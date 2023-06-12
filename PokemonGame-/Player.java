@@ -12,6 +12,7 @@ public class Player extends Actor
     public int deltaY;
     public int speed = 1;
     
+    
     public void act(){
     
         //Images

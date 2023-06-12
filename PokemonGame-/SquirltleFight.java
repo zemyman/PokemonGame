@@ -9,11 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SquirltleFight extends Actor
 {
     public  int x;
+    public int hp;
+    public int atck;
+    public int xp;
     /**
      * Act - do whatever the SquirltleFight wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public  void act()
+    public void act()
     {
          GreenfootImage s1 = new GreenfootImage("S1.png");
          GreenfootImage s2 = new GreenfootImage("S2.png");
@@ -24,6 +27,22 @@ public class SquirltleFight extends Actor
          GreenfootImage s7 = new GreenfootImage("S7.png");
          GreenfootImage sf = new GreenfootImage("SF.png");
          GreenfootImage[] images = {s1, s2, s3, s4,s5,s6,s7,sf};
+         
+         if(Greenfoot.isKeyDown("1") ){
+             
+         }
+         
+         if(Greenfoot.isKeyDown("2") ){
+             
+         }
+         
+         if(Greenfoot.isKeyDown("3") ){
+             
+         }
+         
+         if(Greenfoot.isKeyDown("4") ){
+             
+         }
          
          if(isTouching(throwBall.class)){
          do{
@@ -36,8 +55,9 @@ public class SquirltleFight extends Actor
              }
          }while(x < 7);
     }
-  
-  }
+      
 }
+}
+
 
 

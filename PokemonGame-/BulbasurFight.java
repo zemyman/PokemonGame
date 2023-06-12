@@ -9,6 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BulbasurFight extends Bulbasur
 {
     public int x;
+    public int hp;
+    public int atck;
+    public int xp;
     /**
      * Act - do whatever the BulbasurFight wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,6 +29,22 @@ public class BulbasurFight extends Bulbasur
          GreenfootImage B = new GreenfootImage("B.png");
          GreenfootImage[] images = {s1,s2, s3, s4,s5,s6,s7,B};
          
+         if(Greenfoot.isKeyDown("1") ){
+             
+         }
+         
+         if(Greenfoot.isKeyDown("2") ){
+             
+         }
+         
+         if(Greenfoot.isKeyDown("3") ){
+             
+         }
+         
+         if(Greenfoot.isKeyDown("4") ){
+             
+         }
+         
          if(isTouching(throwBall.class)){
          do{
              
@@ -37,5 +56,6 @@ public class BulbasurFight extends Bulbasur
              }
          }while(x < 7);
     }
+    
     }
 }
