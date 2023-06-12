@@ -26,5 +26,7 @@ public class PokemonCenter1 extends World
         addObject(new BoundsSide(),7, 156);
         addObject(new BoundsSide(),585, 214);
         addObject(new BoundsSide(),587, 167);
+        addObject(new Player(), 302, 276);
+        addObject(new SpawnWarp(), 303, 341);
     }
 }
