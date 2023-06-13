@@ -17,12 +17,14 @@ public class Battle extends World
     public  static int pokemon2;
     public  static int pokemon3;
     public static boolean dele;
+    public static int enemyHealth = 100;
+    public static int Health = 100;
     //passing info
     public static void pokemon1U(int poke){
         pokemon1 = poke;
     }
     
-   
+  
   
     /**
      * Constructor for objects of class Battle.
@@ -32,9 +34,12 @@ public class Battle extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        
+       
+        //addObject(new Attack1(), 386, 241);
         PlayerFight PlayerFight = new PlayerFight();
         addObject(PlayerFight, 600, 328);
+        addObject(new attackHitbox(), 260, 286);
+        //addObject(new attackSf(),328, 243);
         if(dele = true){
             removeObject(new throwBall());
         }
@@ -69,9 +74,16 @@ public class Battle extends World
           }
          addObject(new throwBall(),163,375);
          addObject(new EnemyPokemon(), 0, 180);
+           int r = 0;
+        addObject(new healthbarPlayer(), 414, 303);
+             
+            
+
          
-         
-    }
+        }
+    
+    
+    
        
 }
 

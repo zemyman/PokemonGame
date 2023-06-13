@@ -10,6 +10,11 @@ public class PlayerFight extends Actor
 {
          GreenfootImage red = new GreenfootImage("ashred.png");
          public static int pokemon1;
+         public static int health;
+         public  static boolean YourTurn ;
+         public static int playerHealth= 100;
+        public static int enemyHealth= 100;
+        public int turn = 0;
        public static void pokemon1U(int poke){
         pokemon1 = poke;
     }
@@ -19,6 +24,7 @@ public class PlayerFight extends Actor
      */
     public void act()
     {
+        
             for(int a = 0; a < 5; a++){
             if(getX()!=84){
             setLocation(getX()  - 1 , getY());
@@ -26,15 +32,45 @@ public class PlayerFight extends Actor
             //Battle.waits(5);
             setLocation(84 , getY());
             setImage(red);
-            
+             
             
             //FIRST POKEMON
-            if(pokemon1==1){
-                
+            
+        }
+        }
+        
+        
+        if(turn == 0){
+            //MOVES
+          if(Greenfoot.isKeyDown("r") ){
+             enemyHealth -=2;
+             turn = 1;
+          }
+           else if(Greenfoot.isKeyDown("t")){
+            enemyHealth -=3;
+             turn = 1;
+          }
+           else if(Greenfoot.isKeyDown("y") ){
+            enemyHealth -=4;
+             turn = 1;
+          }
+        }
+        if(turn == 1){
+            int p = Greenfoot.getRandomNumber(2);
+            if(p==0){
+               playerHealth -=1;  
+              turn = 0;
+            }
+            else if(p==1){
+             playerHealth -= 3;
+            turn = 0;
+            }
+            else if(p==2){
+              playerHealth -=2;
+             turn = 0;
             }
         }
-        }
-        
-        
-    }
+   
+}
+   
 }
