@@ -43,6 +43,7 @@ public class spawn extends World
         addObject(new SmallHbounds(),434,170);
         //Waprs
         addObject(new forestWarp(),486,259);
+        addObject(new PokemonCenterTp(), 150, 151);
         if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),98, 293);
