@@ -76,7 +76,7 @@ public class Battle extends World
          addObject(new EnemyPokemon(), 0, 180);
            int r = 0;
         addObject(new healthbarPlayer(), 414, 303);
-             
+        addObject(new healthbarEnemy(), 147, 52);     
             
 
          
