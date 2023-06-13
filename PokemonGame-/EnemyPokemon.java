@@ -30,6 +30,7 @@ public class EnemyPokemon extends Actor
         GreenfootImage poly = new GreenfootImage("poly.png");
         GreenfootImage abra = new GreenfootImage("abra.png");
         GreenfootImage bird = new GreenfootImage("bird.png");
+        GreenfootImage blank = new GreenfootImage("blank.png");
         
         if(x == 1|| x == 0){
             setImage(Pikachu);
@@ -44,34 +45,8 @@ public class EnemyPokemon extends Actor
             setImage(bird);
         }
         
-        if(YourTurn1 == true){
-            if(randomAttack == 0){
-                    PlayerFight.health -=20;
-                    PlayerFight.YourTurn = true;
-                    YourTurn1 = false;
-                }
-            if(randomAttack == 1){
-                 PlayerFight.health -=20;
-                    PlayerFight.YourTurn = true;
-                    YourTurn1 = false;
-            }
-            if(randomAttack == 2){
-                PlayerFight.health -=20;
-                    PlayerFight.YourTurn = true;
-                    YourTurn1 = false;
-            }
-            if(randomAttack == 3){
-                 PlayerFight.health -=20;
-                    PlayerFight.YourTurn = true;
-                    YourTurn1= false;
-            }
-            if(randomAttack == 4){
-                 PlayerFight.health -=20;
-                    PlayerFight.YourTurn = true;
-                    YourTurn1 = false;
-            }
-            
-        }
+        
+        
         
     }
     public static void dam(int d){

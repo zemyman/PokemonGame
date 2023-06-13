@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class PlayerFight extends Actor
 {
          GreenfootImage red = new GreenfootImage("ashred.png");
+          GreenfootImage blank = new GreenfootImage("blank.png");
          public static int pokemon1;
          public static int health;
          public  static boolean YourTurn ;
@@ -59,16 +60,34 @@ public class PlayerFight extends Actor
             int p = Greenfoot.getRandomNumber(2);
             if(p==0){
                playerHealth -=1;  
+               setImage(blank);
+               Greenfoot.delay(3);
+               setImage(red);
               turn = 0;
             }
             else if(p==1){
              playerHealth -= 3;
+             setImage(blank);
+               Greenfoot.delay(3);
+               setImage(red);
             turn = 0;
             }
             else if(p==2){
               playerHealth -=2;
+              setImage(blank);
+               Greenfoot.delay(3);
+               setImage(red);
              turn = 0;
             }
+        }
+        if(playerHealth < 0){
+            spawn w = new spawn();
+            Greenfoot.setWorld(w);
+        }
+        if(enemyHealth < 0){
+            spawn w = new spawn();
+            Greenfoot.setWorld(w);
+            enemyHealth = 100;
         }
    
 }
