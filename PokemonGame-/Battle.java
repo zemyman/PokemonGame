@@ -46,31 +46,49 @@ public class Battle extends World
         
         if(display = true){
             if(pokemon1 == 1){
-            addObject(new Bulbasur(),395, 360);
+            addObject(new Bulbasur(),317, 360);
             addObject(new BulbasurFight(),240, 284);
          }
          else if(pokemon1 == 2){
-            addObject(new Charmander(),395, 360);
+            addObject(new Charmander(),317, 360);
             addObject(new CharmanderFight(),240, 284);
          }
           else if(pokemon1 == 3){
-            addObject(new Squirtle(),395, 360);
+            addObject(new Squirtle(),317, 360);
             addObject(new SquirltleFight(),240, 284);
             
          }
-          else if(pokemon1 == 4){
-            
+         else if(pokemon1 == 6){
+            addObject(new Wartortle(),317, 357);
+            addObject(new WartortleFight(),240, 284);
          }
           else if(pokemon1 == 5){
-            
+            addObject(new Charmeleon(),317, 357);
+            addObject(new CharmeleonFight(),240, 284);
          }
-          else{
-            addObject(new PokeballSprite(),395, 360);
+         else if(pokemon1 == 4){
+            addObject(new Ivysaur(),317, 357);
+            addObject(new IvysaurFight(),240, 284);
          }
-         
+         else if(pokemon1 == 9){
+            addObject(new Blastoise(),317, 357);
+            addObject(new BlastoiseFight(),240, 284);
+         }
+         else if(pokemon1 == 8){
+            addObject(new Charizard(),317, 357);
+            addObject(new CharizardFight(),240, 284);
+         }
+         else if(pokemon1 == 7){
+            addObject(new Venusaur(),317, 357);
+            addObject(new VenusaurFight(),240, 284);
+         }
+        else{
+            addObject(new PokeballSprite(),21, 293);
+        }
+          
        
-            addObject(new PokeballSprite(),317, 360);
             addObject(new PokeballSprite(),356, 360);
+            addObject(new PokeballSprite(),395, 360);
           }
          addObject(new throwBall(),163,375);
          addObject(new EnemyPokemon(), 0, 180);
