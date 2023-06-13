@@ -15,7 +15,7 @@ public class BorderH extends Actor
    
 public BorderH(int width, int height){
         GreenfootImage img = new GreenfootImage(width, height);
-        img.setColor(new Color(255,0,0));
+        img.setColor(new Color(0,0,255));
         img.fill();
         setImage(img);    
         }

@@ -45,12 +45,31 @@ public class Forest extends World
         addObject(new Wall(45, 48), 296, 71);
         addObject(new Wall(15, 63), 266, 31);
          */
-        addObject(new BorderV(10,254), 181,126);
-    
-        addObject(new BorderV(10,145), 213,136);
-        addObject(new BorderV(10,90), 90,293);
-        addObject(new BorderV(10,178), 203,388);
-        addObject(new BorderV(10,286), 246,351);
+        //addObject(new BorderV(10,254), 181,126);
+        //addObject(new BorderV(10,145), 213,136);
+        //addObject(new BorderV(10,90), 90,293);
+        //addObject(new BorderV(10,178), 203,388);
+        //addObject(new BorderV(10,286), 246,351);
+        addObject(new BorderV(10,253), 178,0);
+        addObject(new BorderV(10,136), 207,70);
+        addObject(new BorderV(10,81), 86,253);
+        addObject(new BorderV(10,31), 146,303);
+        addObject(new BorderV(10,176), 197,304);
+        addObject(new BorderV(10,239), 272,241);
+        addObject(new BorderV(10,82), 401,158);
+        addObject(new BorderV(10,48), 325,158);
+        addObject(new BorderV(10,145), 289,61);
+        addObject(new BorderV(10,60), 256,0);
+        
+        addObject(new BorderH(28,10), 188,69);
+        addObject(new BorderH(28,10), 188,197);
+        addObject(new BorderH(91,10), 96,244);
+        addObject(new BorderH(50,10), 96,335);
+        addObject(new BorderH(59,10), 147,303);
+        addObject(new BorderH(128,10), 273,240);
+        addObject(new BorderH(66,10), 335,148);
+        addObject(new BorderH(44,10), 290,197);
+        addObject(new BorderH(32,10), 257,51);
 
         //warps
         addObject(new ForestToSpawnWarp(),240, 470);
