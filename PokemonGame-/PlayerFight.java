@@ -81,7 +81,7 @@ public class PlayerFight extends Actor
             }
         }
         if(playerHealth < 0){
-            spawn w = new spawn();
+            PokemonCenter1 w = new PokemonCenter1();
             Greenfoot.setWorld(w);
         }
         if(enemyHealth < 0){
