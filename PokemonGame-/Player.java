@@ -64,6 +64,7 @@ public class Player extends Actor
          else{
             deltaY = 0;
              }
+             
         if(Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("d")) {
            
            if (Greenfoot.isKeyDown("a")){
