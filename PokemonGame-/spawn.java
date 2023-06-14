@@ -46,29 +46,41 @@ public class spawn extends World
         addObject(new PokemonCenterTp(), 150, 151);
         if(display = true){
             if(pokemon1 == 1){
-            addObject(new Bulbasur(),98, 293);
+            addObject(new Bulbasur(),21, 293);
             
         }
          else if(pokemon1 == 2){
-            addObject(new Charmander(),98, 293);
+            addObject(new Charmander(),21, 293);
             
         }
           else if(pokemon1 == 3){
-            addObject(new Squirtle(),98, 293);
+            addObject(new Squirtle(),21, 293);
             
         }
-          else if(pokemon1 == 4){
-            
-        }
+      else if(pokemon1 == 6){
+            addObject(new Wartortle(),317, 357);
+         }
           else if(pokemon1 == 5){
-            
-        }
+            addObject(new Charmeleon(),317, 357);
+         }
+         else if(pokemon1 == 4){
+            addObject(new Ivysaur(),317, 357);
+         }
+         else if(pokemon1 == 9){
+            addObject(new Blastoise(),317, 357);
+         }
+         else if(pokemon1 == 8){
+            addObject(new Charizard(),317, 357);
+         }
+         else if(pokemon1 == 7){
+            addObject(new Venusaur(),317, 357);
+         }
         else{
-            addObject(new PokeballSprite(),98, 293);
-        }
-            
-            addObject(new PokeballSprite(),61, 293);
             addObject(new PokeballSprite(),21, 293);
+        }
+            addObject(new PokeballSprite(),98, 293);
+            addObject(new PokeballSprite(),61, 293);
+            
         }
     }
     //Every pokemon has a number 
