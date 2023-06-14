@@ -50,29 +50,31 @@ public class Forest extends World
         //addObject(new BorderV(10,90), 90,293);
         //addObject(new BorderV(10,178), 203,388);
         //addObject(new BorderV(10,286), 246,351);
-        addObject(new BorderV(10,253), 178,0);
-        addObject(new BorderV(10,136), 207,70);
-        addObject(new BorderV(10,81), 86,253);
-        addObject(new BorderV(10,31), 146,303);
-        addObject(new BorderV(10,176), 197,304);
-        addObject(new BorderV(10,239), 272,241);
-        addObject(new BorderV(10,82), 401,158);
-        addObject(new BorderV(10,48), 325,158);
-        addObject(new BorderV(10,145), 289,61);
-        addObject(new BorderV(10,60), 256,0);
+        addObject(new BorderV(10,253), 179, 126);
+        addObject(new BorderV(10,136), 208, 137);
+        addObject(new BorderV(10,81), 87, 294);
+        addObject(new BorderV(10,31), 147, 319);
+        addObject(new BorderV(10,176), 199, 392);
+        addObject(new BorderV(10,239), 278, 360);
+        addObject(new BorderV(10,82), 407, 199);
+        addObject(new BorderV(10,48), 331, 182);
+        addObject(new BorderV(10,145), 295, 133);
+        addObject(new BorderV(10,60), 261, 30);
+
         
-        addObject(new BorderH(28,10), 188,69);
-        addObject(new BorderH(28,10), 188,197);
-        addObject(new BorderH(91,10), 96,244);
-        addObject(new BorderH(50,10), 96,335);
-        addObject(new BorderH(59,10), 147,303);
-        addObject(new BorderH(128,10), 273,240);
-        addObject(new BorderH(66,10), 335,148);
-        addObject(new BorderH(44,10), 290,197);
-        addObject(new BorderH(32,10), 257,51);
+        addObject(new BorderH(28,10), 198, 73);
+        addObject(new BorderH(28,10), 198, 202);
+        addObject(new BorderH(91,10), 137, 249);
+        addObject(new BorderH(50,10), 117, 340);
+        addObject(new BorderH(59,10), 172, 308);
+        addObject(new BorderH(128,10), 338, 245);
+        addObject(new BorderH(66,10), 369, 153);
+        addObject(new BorderH(44,10), 313, 202);
+        addObject(new BorderH(32,10), 274, 56);
+
 
         //warps
-        addObject(new ForestToSpawnWarp(),240, 470);
+        addObject(new ForestToSpawnWarp(),238, 470);
         addObject(new WanderingPokemon1(),293, 208);
         
          if(display = true){

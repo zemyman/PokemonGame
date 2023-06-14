@@ -10,8 +10,8 @@ public class ForestToSpawnWarp extends Actor
 {
     public void act()
     {
-        GreenfootImage img = new GreenfootImage(65, 20);
-        img.setColor(new Color(255,0,0));
+        GreenfootImage img = new GreenfootImage(69, 20);
+        img.setColor(new Color(0,255,0));
         img.fill();
         setImage(img);
         if(isTouching(Player.class)){

@@ -20,18 +20,25 @@ public class Player extends Actor
          GreenfootImage east = new GreenfootImage("PlayerE.png");
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
-       if(isTouching(Wall.class)){
+       if(isTouching(BorderV.class)){
             if(Greenfoot.isKeyDown("a")){
-                setLocation(getX()  + speed + 1 , getY());
+                setLocation(getX() + speed , getY());
+            }else{
+                setLocation(getX() - speed , getY() );
             }
+        }
+        if(isTouching(BorderV.class)){
+            if(Greenfoot.isKeyDown("a")){
+                setLocation(getX() + speed , getY());
+            }else{
+                setLocation(getX() - speed , getY() );
+            }
+        }
+        if(isTouching(BorderH.class)){
             if(Greenfoot.isKeyDown("w")){
-                setLocation(getX()  , getY() + speed + 1);
-            }
-            if(Greenfoot.isKeyDown("s")){
-                setLocation(getX()  , getY() - speed - 1);
-            }
-            if(Greenfoot.isKeyDown("d")){
-                setLocation(getX() - speed - 1, getY());
+                setLocation(getX() , getY() + speed );
+            }else{
+                setLocation(getX() , getY() - speed);
             }
         }
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("s")){
