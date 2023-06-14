@@ -16,6 +16,8 @@ public class PlayerFight extends Actor
          public static int playerHealth= 100;
         public static int enemyHealth= 100;
         public int turn = 0;
+        public static int xp = 0;
+        public static int finalxp = 0;
        public static void pokemon1U(int poke){
         pokemon1 = poke;
     }
@@ -44,15 +46,41 @@ public class PlayerFight extends Actor
         if(turn == 0){
             //MOVES
           if(Greenfoot.isKeyDown("r") ){
-             enemyHealth -=2;
+              if(pokemon1 == 4||pokemon1 == 5||pokemon1 == 6){
+                  if(pokemon1 == 7 || pokemon1 == 8 || pokemon1 == 9 ){
+                      enemyHealth -=8;
+                    }else{
+                        enemyHealth -=4;
+                    }
+              }else{
+                  enemyHealth -=2;
+              }
+             
              turn = 1;
           }
            else if(Greenfoot.isKeyDown("t")){
-            enemyHealth -=3;
+            
+             if(pokemon1 == 4||pokemon1 == 5||pokemon1 == 6){
+                  if(pokemon1 == 7 || pokemon1 == 8 || pokemon1 == 9 ){
+                      enemyHealth -=9;
+                    }else{
+                        enemyHealth -=6;
+                    }
+              }else{
+                  enemyHealth -=3;
+              }
              turn = 1;
           }
            else if(Greenfoot.isKeyDown("y") ){
-            enemyHealth -=4;
+             if(pokemon1 == 4||pokemon1 == 5||pokemon1 == 6){
+                  if(pokemon1 == 7 || pokemon1 == 8 || pokemon1 == 9 ){
+                      enemyHealth -=8;
+                    }else{
+                        enemyHealth -=6;
+                    }
+              }else{
+                  enemyHealth -=4;
+              }
              turn = 1;
           }
         }
@@ -88,8 +116,34 @@ public class PlayerFight extends Actor
             spawn w = new spawn();
             Greenfoot.setWorld(w);
             enemyHealth = 100;
+            xp += 100;
+            finalxp += 20;
         }
+        if(xp >= 300){
+            xp = 0;
+            if(pokemon1 == 1){
+            Player.whatS(4);
+        }
+         if(pokemon1 == 2){
+            Player.whatS(5);
+        }
+         if(pokemon1 == 3){
+            Player.whatS(6);
+        }
+           
+     }
+     if(finalxp == 100){
+         if(pokemon1 == 4){
+            Player.whatS(7);
+        }
+         if(pokemon1 == 5){
+            Player.whatS(8);
+        }
+         if(pokemon1 == 6){
+            Player.whatS(9);
+        }
+
+     }
    
-}
-   
+   }
 }
