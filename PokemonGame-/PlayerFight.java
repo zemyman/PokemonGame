@@ -109,11 +109,11 @@ public class PlayerFight extends Actor
             }
         }
         if(playerHealth < 0){
-            PokemonCenter1 w = new PokemonCenter1();
+            LoseScreen w = new LoseScreen();
             Greenfoot.setWorld(w);
         }
         if(enemyHealth < 0){
-            spawn w = new spawn();
+            WinScreen w = new WinScreen();
             Greenfoot.setWorld(w);
             enemyHealth = 100;
             xp += 100;

@@ -71,6 +71,8 @@ public class Forest extends World
         //warps
         addObject(new SpawnWarp(),236, 376);
         addObject(new WanderingPokemon1(),293, 208);
+        addObject(new WanderingPokemon2(),206, 229);
+        addObject(new WanderingPokemon3(),126, 280);
         
          if(display = true){
             if(pokemon1 == 1){
@@ -104,7 +106,7 @@ public class Forest extends World
             addObject(new Venusaur(),317, 357);
          }
         else{
-            addObject(new PokeballSprite(),21, 293);
+            addObject(new PokeballSprite(),317,357);
         }
             addObject(new PokeballSprite(),356, 358);
             

@@ -58,22 +58,22 @@ public class spawn extends World
             
         }
       else if(pokemon1 == 6){
-            addObject(new Wartortle(),317, 357);
+            addObject(new Wartortle(),21, 293);
          }
           else if(pokemon1 == 5){
-            addObject(new Charmeleon(),317, 357);
+            addObject(new Charmeleon(),21, 293);
          }
          else if(pokemon1 == 4){
-            addObject(new Ivysaur(),317, 357);
+            addObject(new Ivysaur(),21, 293);
          }
          else if(pokemon1 == 9){
-            addObject(new Blastoise(),317, 357);
+            addObject(new Blastoise(),21, 293);
          }
          else if(pokemon1 == 8){
-            addObject(new Charizard(),317, 357);
+            addObject(new Charizard(),21, 293);
          }
          else if(pokemon1 == 7){
-            addObject(new Venusaur(),317, 357);
+            addObject(new Venusaur(),21, 293);
          }
         else{
             addObject(new PokeballSprite(),21, 293);
