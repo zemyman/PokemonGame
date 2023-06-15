@@ -21,55 +21,7 @@ public class Player extends Actor
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
       
-       if(isTouching(smallVBound.class) == false && isTouching(BoundsSide.class) == false && isTouching(Bounds.class) == false && isTouching(SmallHbounds.class) == false ){
-        if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("s")){
-          
-          if (Greenfoot.isKeyDown("w")){
-            deltaY = speed * -1;
-            setImage(north);
-            }
-            else if (Greenfoot.isKeyDown("s")){
-            deltaY = speed;
-            setImage(south);
-            }
-                   }
-         else{
-            deltaY = 0;
-             }
-             
-        if(Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("d")) {
-           
-           if (Greenfoot.isKeyDown("a")){
-            deltaX = speed * -1;
-            setImage(west);
-            }
-            else if (Greenfoot.isKeyDown("d")){
-            deltaX = speed;
-            setImage(east);
-            }
-       
-        
-        }else{
-            deltaX = 0;
-        }
-        //updating the players posistion
-        
-        setLocation(getX() +  deltaX , getY() + deltaY);
-        
-    }else{
-        if(Greenfoot.isKeyDown("a") && Greenfoot.isKeyDown("d") == false){
-            setLocation(getX() + 1 , getY() );
-        }
-        if(Greenfoot.isKeyDown("d") && Greenfoot.isKeyDown("a") == false){
-            setLocation(getX() - 1 , getY() );
-        }
-        if(Greenfoot.isKeyDown("w")&& Greenfoot.isKeyDown("s") == false){
-            setLocation(getX()  , getY() +1 );
-        }
-        if(Greenfoot.isKeyDown("s")&& Greenfoot.isKeyDown("w") == false){
-            setLocation(getX()  , getY() - 1 );
-        }
-    }
+    
 }
     public static void whatS(int start){
         
