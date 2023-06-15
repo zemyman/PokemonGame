@@ -20,36 +20,8 @@ public class Player extends Actor
          GreenfootImage east = new GreenfootImage("PlayerE.png");
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
-       if(isTouching(smallVBound.class)){
-            if(Greenfoot.isKeyDown("a")){
-                setLocation(getX()  + speed , getY());
-            }else{
-                setLocation(getX()  - speed , getY() );
-            }
-        }
-        if(isTouching(SmallHbounds.class)){
-           if(Greenfoot.isKeyDown("w")){
-                setLocation(getX()  , getY() + speed);
-            }else{
-                setLocation(getX()   , getY() - speed);
-            }
-        }
-        if(isTouching(Bounds.class)){
-            if(Greenfoot.isKeyDown("w")){
-                setLocation(getX()  , getY() + speed);
-            }else{
-                setLocation(getX()  , getY() - speed);
-            }
-        }
-        if(isTouching(BoundsSide.class)){
-            if(Greenfoot.isKeyDown("a")){
-                setLocation(getX()  + speed , getY());
-            }else{
-                setLocation(getX()  - speed , getY() );
-            }
-            
-        }
-       
+      
+       if(isTouching(smallVBound.class) == false && isTouching(BoundsSide.class) == false && isTouching(Bounds.class) == false && isTouching(SmallHbounds.class) == false ){
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("s")){
           
           if (Greenfoot.isKeyDown("w")){
@@ -79,12 +51,26 @@ public class Player extends Actor
         
         }else{
             deltaX = 0;
-            }
+        }
         //updating the players posistion
         
         setLocation(getX() +  deltaX , getY() + deltaY);
         
+    }else{
+        if(Greenfoot.isKeyDown("a") && Greenfoot.isKeyDown("d") == false){
+            setLocation(getX() + 1 , getY() );
+        }
+        if(Greenfoot.isKeyDown("d") && Greenfoot.isKeyDown("a") == false){
+            setLocation(getX() - 1 , getY() );
+        }
+        if(Greenfoot.isKeyDown("w")&& Greenfoot.isKeyDown("s") == false){
+            setLocation(getX()  , getY() +1 );
+        }
+        if(Greenfoot.isKeyDown("s")&& Greenfoot.isKeyDown("w") == false){
+            setLocation(getX()  , getY() - 1 );
+        }
     }
+}
     public static void whatS(int start){
         
         spawn.pokemonDisplay(start);
