@@ -20,16 +20,25 @@ public class text1 extends Actor
             Player.whatS(1);
             Greenfoot.delay(3);
             Greenfoot.setWorld(w);
+            WanderingPokemon1.x =1;
+            WanderingPokemon2.x =1;
+            WanderingPokemon3.x =1;
         }
         else if(Greenfoot.isKeyDown("2")){
             Player.whatS(2);
             Greenfoot.delay(3);
             Greenfoot.setWorld(w);
+            WanderingPokemon1.x =2;
+            WanderingPokemon2.x =2;
+            WanderingPokemon3.x =2;
         }
         else if(Greenfoot.isKeyDown("3") ){
             Player.whatS(3);
             Greenfoot.delay(3);
             Greenfoot.setWorld(w);
+            WanderingPokemon1.x =3;
+            WanderingPokemon2.x =3;
+            WanderingPokemon3.x =3;
         }
     }
 }

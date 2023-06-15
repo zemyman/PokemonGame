@@ -20,7 +20,7 @@ public class Player extends Actor
          GreenfootImage east = new GreenfootImage("PlayerE.png");
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
-       if(isTouching(smallVBound.class)){
+      if(isTouching(smallVBound.class)){
             if(Greenfoot.isKeyDown("a")){
                 setLocation(getX()  + speed , getY());
             }else{
@@ -83,8 +83,8 @@ public class Player extends Actor
         //updating the players posistion
         
         setLocation(getX() +  deltaX , getY() + deltaY);
-        
-    }
+    
+}
     public static void whatS(int start){
         
         spawn.pokemonDisplay(start);
