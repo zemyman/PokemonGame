@@ -91,7 +91,7 @@ public class Player extends Actor
         Forest.pokemonDisplay(start);
         Battle.pokemon1U(start);
         PlayerFight.pokemon1U(start);
-        
+       FinalFight.pokemonU1(start);
     }
 }
     
