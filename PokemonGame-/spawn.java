@@ -42,6 +42,7 @@ public class spawn extends World
         addObject(new smallVBound(),420, 200);
         addObject(new SmallHbounds(),434,170);
         //Waprs
+        addObject(new topMapWarp(),416,18);
         addObject(new forestWarp(),486,259);
         addObject(new PokemonCenterTp(), 150, 151);
         if(display = true){

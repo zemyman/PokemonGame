@@ -92,6 +92,8 @@ public class Player extends Actor
         Battle.pokemon1U(start);
         PlayerFight.pokemon1U(start);
        FinalFight.pokemonU1(start);
+      GymWarp.pokemonDisplay(start);
+      //METHOD FOR SHARING POKEMON
     }
 }
     
