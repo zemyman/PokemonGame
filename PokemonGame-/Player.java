@@ -91,7 +91,9 @@ public class Player extends Actor
         
         setLocation(getX() +  deltaX , getY() + deltaY);
     
-}
+    }
+    //Method for sharing what the starter pokemon is
+    //and for updating it accross worlds when they evolve.
     public static void whatS(int start){
         
         spawn.pokemonDisplay(start);
@@ -103,7 +105,7 @@ public class Player extends Actor
       topOfMap.pokemonDisplay(start);
       //METHOD FOR SHARING POKEMON
     }
-}
+  }
     
  
 
