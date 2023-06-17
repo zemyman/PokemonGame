@@ -77,41 +77,39 @@ public class Forest extends World
         
          if(display = true){
             if(pokemon1 == 1){
-            addObject(new Bulbasur(),317, 357);
+            addObject(new Bulbasur(),19,373);
             
          }
          else if(pokemon1 == 2){
-            addObject(new Charmander(),317, 357);
+            addObject(new Charmander(),19,373);
             
          }
           else if(pokemon1 == 3){
-            addObject(new Squirtle(),317, 357);
+            addObject(new Squirtle(),19,373);
             
          }
          else if(pokemon1 == 6){
-            addObject(new Wartortle(),317, 357);
+            addObject(new Wartortle(),19,373);
          }
           else if(pokemon1 == 5){
-            addObject(new Charmeleon(),317, 357);
+            addObject(new Charmeleon(),19,373);
          }
          else if(pokemon1 == 4){
-            addObject(new Ivysaur(),317, 357);
+            addObject(new Ivysaur(),19,373);
          }
          else if(pokemon1 == 9){
-            addObject(new Blastoise(),317, 357);
+            addObject(new Blastoise(),19,373);
          }
          else if(pokemon1 == 8){
-            addObject(new Charizard(),317, 357);
+            addObject(new Charizard(),19,373);
          }
          else if(pokemon1 == 7){
-            addObject(new Venusaur(),317, 357);
+            addObject(new Venusaur(),19,373);
          }
         else{
-            addObject(new PokeballSprite(),317,357);
+            addObject(new PokeballSprite(),19,373);
         }
-            addObject(new PokeballSprite(),356, 358);
             
-            addObject(new PokeballSprite(),395, 360);
           }
     }
     
