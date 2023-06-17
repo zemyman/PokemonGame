@@ -27,7 +27,7 @@ public class spawn extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
         //Greenfoot.setWorld(new topOfMap());
-        
+        addObject(new pokemoncentersprite(), 158, 117);
         //ADDING PLAYER
         addObject(new Player(),500, 163);
         //BOUNDS
