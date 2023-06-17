@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
+    //ALL FOR MOVEMENT
     public int deltaX ;
     public int deltaY;
     public int speed = 1;
