@@ -58,7 +58,7 @@ public class spawn extends World
             addObject(new Squirtle(),21, 293);
             
         }
-      else if(pokemon1 == 6){
+        else if(pokemon1 == 6){
             addObject(new Wartortle(),21, 293);
          }
           else if(pokemon1 == 5){
@@ -79,10 +79,10 @@ public class spawn extends World
         else{
             addObject(new PokeballSprite(),21, 293);
         }
-            addObject(new PokeballSprite(),98, 293);
-            addObject(new PokeballSprite(),61, 293);
+            //addObject(new PokeballSprite(),98, 293);
+            //addObject(new PokeballSprite(),61, 293);
             
-        }
+      }
     }
     //Every pokemon has a number 
     //1 Bulbasour

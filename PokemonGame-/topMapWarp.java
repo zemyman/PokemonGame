@@ -19,5 +19,6 @@ public class topMapWarp extends Actor
             Greenfoot.setWorld(w);
             
         }
+        getImage().setTransparency(0);
     }
 }

@@ -11,7 +11,8 @@ public class Player extends Actor
     public int deltaX ;
     public int deltaY;
     public int speed = 1;
-    
+    public String DirectionV;
+    public String DirectionH;
     public void act(){
     
         //Images
@@ -21,33 +22,34 @@ public class Player extends Actor
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
       if(isTouching(smallVBound.class)){
-            if(Greenfoot.isKeyDown("a")){
-                setLocation(getX()  + speed , getY());
-            }else{
-                setLocation(getX()  - speed , getY() );
-            }
+          if(DirectionV == "l"){
+              setLocation(getX() +2 , getY() );
+          }
+          if(DirectionV == "r"){
+              setLocation(getX() -2 , getY() );
+          }
         }
         if(isTouching(SmallHbounds.class)){
-           if(Greenfoot.isKeyDown("w")){
-                setLocation(getX()  , getY() + speed);
-            }else{
-                setLocation(getX()   , getY() - speed);
+           if(DirectionH == "n"){
+                setLocation(getX()  , getY() + 2);
+            }if(DirectionH =="s"){
+                setLocation(getX()  , getY() - 2);
             }
         }
         if(isTouching(Bounds.class)){
-            if(Greenfoot.isKeyDown("w")){
-                setLocation(getX()  , getY() + speed);
-            }else{
-                setLocation(getX()  , getY() - speed);
+           if(DirectionH == "n"){
+                setLocation(getX()  , getY() + 2);
+            }if(DirectionH =="s"){
+                setLocation(getX()  , getY() - 2);
             }
         }
         if(isTouching(BoundsSide.class)){
-            if(Greenfoot.isKeyDown("a")){
-                setLocation(getX()  + speed , getY());
-            }else{
-                setLocation(getX()  - speed , getY() );
-            }
-            
+             if(DirectionV == "l"){
+              setLocation(getX() +2 , getY() );
+          }
+          if(DirectionV == "r"){
+              setLocation(getX() -2 , getY() );
+          }
         }
        
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("s")){
@@ -55,10 +57,12 @@ public class Player extends Actor
           if (Greenfoot.isKeyDown("w")){
             deltaY = speed * -1;
             setImage(north);
+            DirectionH ="n";
             }
             else if (Greenfoot.isKeyDown("s")){
             deltaY = speed;
             setImage(south);
+            DirectionH ="s";
             }
                    }
          else{
@@ -70,10 +74,12 @@ public class Player extends Actor
            if (Greenfoot.isKeyDown("a")){
             deltaX = speed * -1;
             setImage(west);
+            DirectionV = "l";
             }
             else if (Greenfoot.isKeyDown("d")){
             deltaX = speed;
             setImage(east);
+            DirectionV ="r";
             }
        
         
@@ -93,6 +99,7 @@ public class Player extends Actor
         PlayerFight.pokemon1U(start);
        FinalFight.pokemonU1(start);
       GymWarp.pokemonDisplay(start);
+      topOfMap.pokemonDisplay(start);
       //METHOD FOR SHARING POKEMON
     }
 }

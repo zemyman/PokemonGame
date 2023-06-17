@@ -28,7 +28,7 @@ public class Forest extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(480, 400, 1, false); 
         //Adding player
-        addObject(new Player(),216, 8);
+        addObject(new Player(),229,50);
         //adding bounds
         addObject(new BoundsSide(),259, 390);
         
@@ -41,6 +41,7 @@ public class Forest extends World
         addObject(new smallVBound(),91, 328);
         addObject(new smallVBound(),162, 331);
         
+         addObject(new SmallHbounds(),237,383);
         addObject(new SmallHbounds(),168, 58);
         addObject(new SmallHbounds(),207, 102);
         addObject(new SmallHbounds(),205, 119);
@@ -69,7 +70,7 @@ public class Forest extends World
         addObject(new SmallHbounds(),331, 192);
         addObject(new SmallHbounds(),307, 192);
         //warps
-        addObject(new SpawnWarp(),236, 376);
+        addObject(new SpawnWarp(),225,5);
         addObject(new WanderingPokemon1(),293, 208);
         addObject(new WanderingPokemon2(),206, 229);
         addObject(new WanderingPokemon3(),126, 280);

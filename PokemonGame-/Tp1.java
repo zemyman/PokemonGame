@@ -19,5 +19,6 @@ public class Tp1 extends Actor
             PokemonCenter1 w = new PokemonCenter1();
             Greenfoot.setWorld(w);
         }
+        getImage().setTransparency(0);
     }
 }

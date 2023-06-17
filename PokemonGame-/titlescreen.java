@@ -46,7 +46,7 @@ public class titlescreen extends Actor
             
             setImage(images[x]);
             GreenfootImage image = getImage();
-             image.scale(600, 400);
+             image.scale(600, 380);
              Greenfoot.delay(4);
              
              
