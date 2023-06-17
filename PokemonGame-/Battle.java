@@ -109,49 +109,49 @@ public class Battle extends World
          
         }
         public void BattleinfoS1(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Squirtle ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Squirtle ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Aqua Jet", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Water Pulse", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Aqua Tail", 20, null, null), 430, 120);
         }
         public void BattleinfoS2(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Wartotle ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Wartotle ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Aqua Jet", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Hydro Pump", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Ice Beam", 20, null, null), 430, 120);
         }
         public void BattleinfoS3(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Blastoise ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Blastoise ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Skull Bash", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Hydro Cannon", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Ice Beam", 20, null, null), 430, 120);
         }
         public void BattleinfoC1(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Charmander ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Charmander ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Flamethrower", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Flame Charge", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Flame Burst", 20, null, null), 430, 120);
         }
         public void BattleinfoC2(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Charmeleon ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Charmeleon ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Dragon Breath", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Flare Blitz", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Inferno", 20, null, null), 430, 120);
         }
         public void BattleinfoC3(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Charizard ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Charizard ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Air Slash", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Dragon Claw", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Blast Burn", 20, null, null), 430, 120);
         }
         public void BattleinfoB1(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Bulbasur ", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Bulbasur ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Seed Bomb", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Power Whip", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Sludge Bomb", 20, null, null), 430, 120);
         }
         public void BattleinfoB2(){
-            getBackground().drawImage(new GreenfootImage("Attack List for Ivysaur", 20, null, null), 430, 75);
+            getBackground().drawImage(new GreenfootImage("Attack List for Ivysaur", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Poisn Powder", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Synthesis", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Solar Beam", 20, null, null), 430, 120);

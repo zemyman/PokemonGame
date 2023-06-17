@@ -20,5 +20,6 @@ public class regen extends Actor
             PlayerFight.playerHealth++;
         }
     }
+    getImage().setTransparency(0);
 }
 }

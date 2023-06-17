@@ -28,7 +28,7 @@ public class Forest extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(480, 400, 1, false); 
         //Adding player
-        addObject(new Player(),216, 8);
+        addObject(new Player(),229,50);
         //adding bounds
         addObject(new BoundsSide(),259, 390);
         
@@ -41,6 +41,7 @@ public class Forest extends World
         addObject(new smallVBound(),91, 328);
         addObject(new smallVBound(),162, 331);
         
+         addObject(new SmallHbounds(),237,383);
         addObject(new SmallHbounds(),168, 58);
         addObject(new SmallHbounds(),207, 102);
         addObject(new SmallHbounds(),205, 119);
@@ -69,48 +70,46 @@ public class Forest extends World
         addObject(new SmallHbounds(),331, 192);
         addObject(new SmallHbounds(),307, 192);
         //warps
-        addObject(new SpawnWarp(),236, 376);
+        addObject(new SpawnWarp(),225,5);
         addObject(new WanderingPokemon1(),293, 208);
         addObject(new WanderingPokemon2(),206, 229);
         addObject(new WanderingPokemon3(),126, 280);
         
          if(display = true){
             if(pokemon1 == 1){
-            addObject(new Bulbasur(),317, 357);
+            addObject(new Bulbasur(),19,373);
             
          }
          else if(pokemon1 == 2){
-            addObject(new Charmander(),317, 357);
+            addObject(new Charmander(),19,373);
             
          }
           else if(pokemon1 == 3){
-            addObject(new Squirtle(),317, 357);
+            addObject(new Squirtle(),19,373);
             
          }
          else if(pokemon1 == 6){
-            addObject(new Wartortle(),317, 357);
+            addObject(new Wartortle(),19,373);
          }
           else if(pokemon1 == 5){
-            addObject(new Charmeleon(),317, 357);
+            addObject(new Charmeleon(),19,373);
          }
          else if(pokemon1 == 4){
-            addObject(new Ivysaur(),317, 357);
+            addObject(new Ivysaur(),19,373);
          }
          else if(pokemon1 == 9){
-            addObject(new Blastoise(),317, 357);
+            addObject(new Blastoise(),19,373);
          }
          else if(pokemon1 == 8){
-            addObject(new Charizard(),317, 357);
+            addObject(new Charizard(),19,373);
          }
          else if(pokemon1 == 7){
-            addObject(new Venusaur(),317, 357);
+            addObject(new Venusaur(),19,373);
          }
         else{
-            addObject(new PokeballSprite(),317,357);
+            addObject(new PokeballSprite(),19,373);
         }
-            addObject(new PokeballSprite(),356, 358);
             
-            addObject(new PokeballSprite(),395, 360);
           }
     }
     

@@ -23,5 +23,6 @@ public class WanderingPokemon3 extends Actor
                 Greenfoot.setWorld(w);
             
         }
+        getImage().setTransparency(0);
     }
 }

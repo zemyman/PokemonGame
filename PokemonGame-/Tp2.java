@@ -19,5 +19,6 @@ public class Tp2 extends Actor
             spawn w = new spawn();
             Greenfoot.setWorld(w);
         }
+        getImage().setTransparency(0);
     }
 }
