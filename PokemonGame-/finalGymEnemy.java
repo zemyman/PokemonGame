@@ -16,11 +16,14 @@ public class finalGymEnemy extends EnemyPokemon
     public void act()
     {
         // Add your action code here.
+        //set image size
+        
         GreenfootImage image = getImage();
             image.scale(100, 100);
   
       move();
         }
+        //method to move
     public void move(){
         if(getX() < 451){
         setLocation(getX()  + 4 , getY());

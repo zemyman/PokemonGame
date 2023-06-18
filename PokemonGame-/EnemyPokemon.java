@@ -31,7 +31,7 @@ public class EnemyPokemon extends Actor
         GreenfootImage abra = new GreenfootImage("abra.png");
         GreenfootImage bird = new GreenfootImage("bird.png");
         GreenfootImage blank = new GreenfootImage("blank.png");
-        
+        //random pokemon incounters
         if(x == 1|| x == 0){
             setImage(Pikachu);
         }

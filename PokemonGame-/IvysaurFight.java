@@ -26,7 +26,8 @@ public class IvysaurFight extends Ivysaur
          GreenfootImage s7 = new GreenfootImage("ivysaurFight.png");
          GreenfootImage B = new GreenfootImage("ivysaurFight.png");
          GreenfootImage[] images = {s1,s2, s3, s4,s5,s6,s7,B};
-         
+         //This is for when throwBall touches Ivysaur it goes through its animation 
+         //and then gets rid of the ball
          if(isTouching(throwBall.class)){
          do{
              

@@ -17,6 +17,7 @@ public class Instructions extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        //this is to tell player what to do inorder to enter the gym
         getBackground().drawImage(new GreenfootImage("YOU ARE NOT STRONG ENOUGH! ", 20, null, null), 180, 200);
         getBackground().drawImage(new GreenfootImage("PRESS E TO CONTINUE", 20, null, null), 210, 240);
         getBackground().drawImage(new GreenfootImage("TRAIN YOU'RE POKEMON IN THE FOREST!", 20, null, null), 160, 220);

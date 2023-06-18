@@ -24,7 +24,8 @@ public class CharmanderFight extends Charmander
          GreenfootImage s7 = new GreenfootImage("C.png");
          GreenfootImage sf = new GreenfootImage("C.png");
          GreenfootImage[] images = {s1, s2, s3, s4,s5,s6,s7,};
-         
+         //This is for when throwBall touches Charmander it goes through its animation 
+         //and then gets rid of the ball
          if(isTouching(throwBall.class)){
          do{
              

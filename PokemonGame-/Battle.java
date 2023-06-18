@@ -38,12 +38,12 @@ public class Battle extends World
         //addObject(new Attack1(), 386, 241);
         PlayerFight PlayerFight = new PlayerFight();
         addObject(PlayerFight, 600, 328);
-        addObject(new attackHitbox(), 260, 286);
+        
         //addObject(new attackSf(),328, 243);
         if(dele = true){
             removeObject(new throwBall());
         }
-        
+        //For spawning your pokemon and it showing in your party
         if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),317, 360);
@@ -108,6 +108,7 @@ public class Battle extends World
 
          
         }
+        //methods for displaying the attatcks
         public void BattleinfoS1(){
             getBackground().drawImage(new GreenfootImage("Attack List for Squirtle ", 20, null, null), 410, 75);
             getBackground().drawImage(new GreenfootImage("R:Aqua Jet", 20, null, null), 430, 90);

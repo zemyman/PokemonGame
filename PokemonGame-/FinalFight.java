@@ -28,6 +28,7 @@ public static void pokemonU1(int poke){
         addObject(new GymCharmeleonFight(), 391,151);
         addObject(new healthbarPlayer(),450,290);
         addObject(new healthbarEnemy(),130,180);
+        //for displaying pokemon in party and for battle
          if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),317, 360);

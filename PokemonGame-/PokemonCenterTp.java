@@ -15,6 +15,7 @@ public class PokemonCenterTp extends Actor
     public void act()
     {
         // Add your action code here.
+        //changes world when touching player
         if(isTouching(Player.class)){
             PokemonCenter1 w = new PokemonCenter1();
             Greenfoot.setWorld(w);

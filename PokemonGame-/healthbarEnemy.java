@@ -15,10 +15,12 @@ public class healthbarEnemy extends EnemyPokemon
     public void act()
     {
         // Add your action code here.
+        //A simple health bar for Enemys
          GreenfootImage full = new GreenfootImage("healthbar_green.png");
          GreenfootImage aboveHalf = new GreenfootImage("healthbar_yellow.png");
          GreenfootImage Half = new GreenfootImage("healthbar_orange.png");
          GreenfootImage low = new GreenfootImage("healthbar_red.png");
+         
          if(PlayerFight.enemyHealth >75){
              setImage(full);
          }

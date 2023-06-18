@@ -25,7 +25,8 @@ public class CharmeleonFight extends Charmeleon
          GreenfootImage s7 = new GreenfootImage("charmeleonFight.png");
          GreenfootImage B = new GreenfootImage("charmeleonFight.png");
          GreenfootImage[] images = {s1,s2, s3, s4,s5,s6,s7,B};
-         
+         //This is for when throwBall touches Charmeleon it goes through its animation 
+         //and then gets rid of the ball
          if(isTouching(throwBall.class)){
          do{
              

@@ -14,6 +14,7 @@ public class healthbarPlayer extends EnemyPokemon
      */
     public void act()
     {
+        //a simple health bar for Player
         // Add your action code here.
          GreenfootImage full = new GreenfootImage("healthbar_green.png");
          GreenfootImage aboveHalf = new GreenfootImage("healthbar_yellow.png");

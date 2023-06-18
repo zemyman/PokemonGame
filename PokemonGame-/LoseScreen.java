@@ -17,6 +17,7 @@ public class LoseScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        //tell the player they lose
         getBackground().drawImage(new GreenfootImage("YOU LOSE!", 20, null, null), 250, 200);
         getBackground().drawImage(new GreenfootImage("PRESS E TO CONTINUE", 20, null, null), 200, 220);
         displayPoke();
