@@ -15,6 +15,7 @@ public class Forest extends World
     public  static int pokemon1;
     public  static int pokemon2;
     public  static int pokemon3;
+    
     public static void pokemonDisplay(int pokemon){
         pokemon1 = pokemon;
     }

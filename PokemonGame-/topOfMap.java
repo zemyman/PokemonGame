@@ -10,6 +10,7 @@ public class topOfMap extends World
 {
     public static int pokemon1;
     public boolean display = true;
+    public static boolean healthWillSpawn = true;
     public static void pokemonDisplay(int pokemon){
         pokemon1 = pokemon;
     }
@@ -102,6 +103,8 @@ public class topOfMap extends World
     addObject(new SmallHbounds(),570,87);
     addObject(new SmallHbounds(),576,134);
    
-    
+    if(healthWillSpawn){
+            addObject(new HealthPotion(),594,112);
+        }
   }
 }

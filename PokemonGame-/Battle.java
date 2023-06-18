@@ -39,6 +39,10 @@ public class Battle extends World
         PlayerFight PlayerFight = new PlayerFight();
         addObject(PlayerFight, 600, 328);
         
+        addObject(new attackHitbox(), 260, 286);
+        if(Player.hasHealthPotion){
+            addHealthPotionInstructions();
+        }
         //addObject(new attackSf(),328, 243);
         if(dele = true){
             removeObject(new throwBall());
@@ -162,6 +166,12 @@ public class Battle extends World
             getBackground().drawImage(new GreenfootImage("R:Petal Blizzard", 20, null, null), 430, 90);
             getBackground().drawImage(new GreenfootImage("T:Frenzy Plant", 20, null, null), 430, 105);
             getBackground().drawImage(new GreenfootImage("Y:Sludge Bomb", 20, null, null), 430, 120);
+        }
+        public void addHealthPotionInstructions(){
+            getBackground().drawImage(new GreenfootImage("G: use health potion", 20, null, null), 430, 135);
+        }
+        public void crossOutHealthPotionInstructions(){
+            addObject(new CrossoutLine(),100,100);
         }
     
     

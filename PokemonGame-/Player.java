@@ -14,6 +14,7 @@ public class Player extends Actor
     public int speed = 1;
     public String DirectionV;
     public String DirectionH;
+    public static boolean hasHealthPotion = false;
     public void act(){
     
         //Images
@@ -94,6 +95,12 @@ public class Player extends Actor
     }
     //Method for sharing what the starter pokemon is
     //and for updating it accross worlds when they evolve.
+    if(isTouching(HealthPotion.class)){
+        hasHealthPotion = true;
+        topOfMap.healthWillSpawn = false;
+        removeTouching(HealthPotion.class);
+    }
+}
     public static void whatS(int start){
         
         spawn.pokemonDisplay(start);
