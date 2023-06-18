@@ -20,6 +20,7 @@ public class PlayerFight extends Actor
         //ex(for evelition)
         public static int xp = 0;
         public static int finalxp = 0;
+         public static boolean finalfight;
        public static void pokemon1U(int poke){
            //Method to get players pokemon from player class
         pokemon1 = poke;
@@ -58,8 +59,13 @@ public class PlayerFight extends Actor
             Greenfoot.setWorld(w);
         }
         if(enemyHealth < 0){
+            if(finalfight ==true){
+               FinalWin w = new FinalWin();
+               Greenfoot.setWorld(w);
+            }else{
             WinScreen w = new WinScreen();
             Greenfoot.setWorld(w);
+           }
             enemyHealth = 100;
             xp += 100;
             finalxp += 20;

@@ -10,6 +10,7 @@ public class FinalFight extends World
 {
     public boolean display = true;
     public static int  pokemon1;
+   
 public static void pokemonU1(int poke){
         pokemon1 = poke;
     }
@@ -21,6 +22,7 @@ public static void pokemonU1(int poke){
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        PlayerFight.finalfight = true;
         addObject(new PlayerFight(), 576, 329);
         addObject(new throwBall(), 165, 374);
         addObject(new finalGymEnemy(), 0, 63);
