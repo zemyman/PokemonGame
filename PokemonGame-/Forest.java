@@ -15,7 +15,7 @@ public class Forest extends World
     public  static int pokemon1;
     public  static int pokemon2;
     public  static int pokemon3;
-    public static boolean healthWillSpawn = true;
+    
     public static void pokemonDisplay(int pokemon){
         pokemon1 = pokemon;
     }
@@ -76,9 +76,6 @@ public class Forest extends World
         addObject(new WanderingPokemon2(),206, 229);
         addObject(new WanderingPokemon3(),126, 280);
         
-        if(healthWillSpawn){
-            addObject(new HealthPotion(),128,284);
-        }
          if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),19,373);
