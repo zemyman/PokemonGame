@@ -39,7 +39,7 @@ public class Battle extends World
         PlayerFight PlayerFight = new PlayerFight();
         addObject(PlayerFight, 600, 328);
         
-        addObject(new attackHitbox(), 260, 286);
+        
         if(Player.hasHealthPotion){
             addHealthPotionInstructions();
         }

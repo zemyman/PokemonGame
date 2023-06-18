@@ -91,16 +91,17 @@ public class Player extends Actor
         //updating the players posistion
         
         setLocation(getX() +  deltaX , getY() + deltaY);
+        if(isTouching(HealthPotion.class)){
+        hasHealthPotion = true;
+        topOfMap.healthWillSpawn = false;
+        removeTouching(HealthPotion.class);
+       }
     
     }
     //Method for sharing what the starter pokemon is
     //and for updating it accross worlds when they evolve.
-    if(isTouching(HealthPotion.class)){
-        hasHealthPotion = true;
-        topOfMap.healthWillSpawn = false;
-        removeTouching(HealthPotion.class);
-    }
-}
+    
+
     public static void whatS(int start){
         
         spawn.pokemonDisplay(start);
