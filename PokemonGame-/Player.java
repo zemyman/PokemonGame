@@ -14,6 +14,7 @@ public class Player extends Actor
     public int speed = 1;
     public String DirectionV;
     public String DirectionH;
+    public boolean hasHealthPotion = false;
     public void act(){
     
         //Images
@@ -90,7 +91,11 @@ public class Player extends Actor
         //updating the players posistion
         
         setLocation(getX() +  deltaX , getY() + deltaY);
-    
+    if(isTouching(HealthPotion.class)){
+        hasHealthPotion = true;
+        Forest.healthWillSpawn = false;
+        removeTouching(HealthPotion.class);
+    }
 }
     public static void whatS(int start){
         
