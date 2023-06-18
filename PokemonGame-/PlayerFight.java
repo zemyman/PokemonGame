@@ -48,6 +48,12 @@ public class PlayerFight extends Actor
              playerA3();
              turn = 1;
           }
+          else if(Greenfoot.isKeyDown("g") && Player.hasHealthPotion){
+              playerHeals();
+              Player.hasHealthPotion = false;
+              getWorld().addObject(new CrossoutLine(),503,145);
+              turn = 1;
+          }
         }
         if(turn == 1){
             enemyA();
@@ -148,6 +154,10 @@ public class PlayerFight extends Actor
               }else{
                   enemyHealth -=2;
               }
+   }
+   public void playerHeals(){
+       playerHealth += 30;
+       
    }
    public void move(){
        //this is just the player sliding accros the screen affect

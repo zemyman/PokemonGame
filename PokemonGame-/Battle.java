@@ -168,6 +168,9 @@ public class Battle extends World
         public void addHealthPotionInstructions(){
             getBackground().drawImage(new GreenfootImage("G: use health potion", 20, null, null), 430, 135);
         }
+        public void crossOutHealthPotionInstructions(){
+            addObject(new CrossoutLine(),100,100);
+        }
     
     
     
