@@ -22,7 +22,7 @@ public class spawn extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public spawn()
+    public spawn(String from)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
@@ -82,6 +82,18 @@ public class spawn extends World
             //addObject(new PokeballSprite(),98, 293);
             //addObject(new PokeballSprite(),61, 293);
             
+      }
+      if (from.equals("fromForest")){
+          addObject(new Player(),485, 223);
+      }
+      else if (from.equals("fromPokemonCenter")){
+          addObject(new Player(),159, 185);
+      }
+      else if (from.equals("fromTopMap")){
+          addObject(new Player(),430, 39);
+      }
+      else{
+          addObject(new Player(),410, 123);
       }
     }
     //Every pokemon has a number 

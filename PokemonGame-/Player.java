@@ -97,14 +97,13 @@ public class Player extends Actor
         removeTouching(HealthPotion.class);
         }
         if(isTouching(ForestToSpawnWarp.class)){
-            Greenfoot.setWorld(new spawn());
-            getWorld().addObject(new Player(), 200, 200);
+            Greenfoot.setWorld(new spawn("fromForest"));
         }
         if(isTouching(PokemonCenterToSpawnWarp.class)){
-            Greenfoot.setWorld(new spawn());
+            Greenfoot.setWorld(new spawn("fromPokemonCenter"));
         }
         if(isTouching(TopMapToSpawnWarp.class)){
-            Greenfoot.setWorld(new spawn());
+            Greenfoot.setWorld(new spawn("fromTopMap"));
         }
         if(isTouching(SpawnToForestWarp.class)){
             Greenfoot.setWorld(new Forest());

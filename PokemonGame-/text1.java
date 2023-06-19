@@ -15,7 +15,7 @@ public class text1 extends Actor
     public void act()
     {
         // Add your action code here.
-        spawn w = new spawn();
+        spawn w = new spawn("fromElse");
         if(Greenfoot.isKeyDown("1") ){
             Player.whatS(1);
             Greenfoot.delay(3);
