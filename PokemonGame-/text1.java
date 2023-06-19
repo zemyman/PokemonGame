@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class text1 extends Actor
+public class Text1 extends Actor
 {
     /**
      * Act - do whatever the text1 wants to do. This method is called whenever
@@ -15,7 +15,7 @@ public class text1 extends Actor
     public void act()
     {
         // Add your action code here.
-        spawn w = new spawn();
+        Spawn w = new Spawn();
         if(Greenfoot.isKeyDown("1") ){
             Player.whatS(1);
             Greenfoot.delay(3);

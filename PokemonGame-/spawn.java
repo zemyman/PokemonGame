@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class spawn extends World
+public class Spawn extends World
 {
     public boolean display = true;
     public boolean ball1 = true;
@@ -22,12 +22,12 @@ public class spawn extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public spawn()
+    public Spawn()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
         //Greenfoot.setWorld(new topOfMap());
-        addObject(new pokemoncentersprite(), 158, 117);
+        addObject(new Pokemoncentersprite(), 158, 117);
         //ADDING PLAYER
         addObject(new Player(),500, 163);
         //BOUNDS
@@ -36,14 +36,14 @@ public class spawn extends World
         addObject(new Bounds(),274, 228);
         addObject(new BoundsSide(),127, 135);
         addObject(new Bounds(),242, 30);
-        addObject(new smallVBound(),389, 4);
-        addObject(new smallVBound(),451, 256);
-        addObject(new smallVBound(),451, 198);
-        addObject(new smallVBound(),420, 200);
+        addObject(new SmallVBound(),389, 4);
+        addObject(new SmallVBound(),451, 256);
+        addObject(new SmallVBound(),451, 198);
+        addObject(new SmallVBound(),420, 200);
         addObject(new SmallHbounds(),434,170);
         //Waprs
-        addObject(new topMapWarp(),416,18);
-        addObject(new forestWarp(),486,259);
+        addObject(new TopMapWarp(),416,18);
+        addObject(new ForestWarp(),486,259);
         addObject(new PokemonCenterTp(), 150, 151);
         if(display = true){
             if(pokemon1 == 1){

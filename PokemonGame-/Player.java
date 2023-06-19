@@ -23,7 +23,7 @@ public class Player extends Actor
          GreenfootImage east = new GreenfootImage("PlayerE.png");
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
-      if(isTouching(smallVBound.class)){
+      if(isTouching(SmallVBound.class)){
           if(DirectionV == "l"){
               setLocation(getX() +2 , getY() );
           }
@@ -93,7 +93,7 @@ public class Player extends Actor
         setLocation(getX() +  deltaX , getY() + deltaY);
         if(isTouching(HealthPotion.class)){
         hasHealthPotion = true;
-        topOfMap.healthWillSpawn = false;
+        TopOfMap.healthWillSpawn = false;
         removeTouching(HealthPotion.class);
        }
     
@@ -104,13 +104,13 @@ public class Player extends Actor
 
     public static void whatS(int start){
         
-        spawn.pokemonDisplay(start);
+        Spawn.pokemonDisplay(start);
         Forest.pokemonDisplay(start);
         Battle.pokemon1U(start);
         PlayerFight.pokemon1U(start);
        FinalFight.pokemonU1(start);
       GymWarp.pokemonDisplay(start);
-      topOfMap.pokemonDisplay(start);
+      TopOfMap.pokemonDisplay(start);
       //METHOD FOR SHARING POKEMON
     }
   }

@@ -45,7 +45,7 @@ public class Battle extends World
         }
         //addObject(new attackSf(),328, 243);
         if(dele = true){
-            removeObject(new throwBall());
+            removeObject(new ThrowBall());
         }
         //For spawning your pokemon and it showing in your party
         if(display = true){
@@ -102,11 +102,11 @@ public class Battle extends World
             addObject(new PokeballSprite(),356, 360);
             addObject(new PokeballSprite(),395, 360);
           }
-         addObject(new throwBall(),163,375);
+         addObject(new ThrowBall(),163,375);
          addObject(new EnemyPokemon(), 0, 180);
            int r = 0;
-        addObject(new healthbarPlayer(), 414, 303);
-        addObject(new healthbarEnemy(), 147, 89);
+        addObject(new HealthbarPlayer(), 414, 303);
+        addObject(new HealthbarEnemy(), 147, 89);
              
             
 
