@@ -20,14 +20,14 @@ public class GymWarp extends Actor
     {
         // Add your action code here.
         if(isTouching(Player.class) ){
-            if(pokemon1 >=7){
+            //if(pokemon1 >=7){
             FinalFight w = new FinalFight();
             Greenfoot.setWorld(w);
-           }else{
-               Instructions w = new Instructions();
-            Greenfoot.setWorld(w);
-           }
+           //}else{
+           //    Instructions w = new Instructions();
+           // Greenfoot.setWorld(w);
+           //}
         }
-        getImage().setTransparency(0);
+        //getImage().setTransparency(0);
     }
 }

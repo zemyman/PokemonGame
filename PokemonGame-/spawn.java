@@ -29,7 +29,7 @@ public class spawn extends World
         //Greenfoot.setWorld(new topOfMap());
         addObject(new pokemoncentersprite(), 158, 117);
         //ADDING PLAYER
-        addObject(new Player(),500, 163);
+        addObject(new Player(),410, 123);
         //BOUNDS
         addObject(new Bounds(),378, 288);
         addObject(new BoundsSide(),524, 141);
@@ -42,9 +42,9 @@ public class spawn extends World
         addObject(new smallVBound(),420, 200);
         addObject(new SmallHbounds(),434,170);
         //Waprs
-        addObject(new topMapWarp(),416,18);
-        addObject(new forestWarp(),486,259);
-        addObject(new PokemonCenterTp(), 150, 151);
+        addObject(new SpawnToTopMapWarp(),430,0);
+        addObject(new SpawnToForestWarp(),486,259);
+        addObject(new SpawnToPokemonCenterWarp(), 158, 162);
         if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),21, 293);
