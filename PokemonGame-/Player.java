@@ -121,7 +121,7 @@ public class Player extends Actor
     //and for updating it accross worlds when they evolve.
     
 
-    public static void whatS(int start){
+      public static void whatS(int start){
         
         Spawn.pokemonDisplay(start);
         Forest.pokemonDisplay(start);
@@ -131,7 +131,7 @@ public class Player extends Actor
       GymWarp.pokemonDisplay(start);
       TopOfMap.pokemonDisplay(start);
       //METHOD FOR SHARING POKEMON
-    }
+        } 
   }
     
  

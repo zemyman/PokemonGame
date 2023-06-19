@@ -23,7 +23,7 @@ public class Spawn extends World
      * 
      */
     public Spawn()
-    public spawn(String from)
+    
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
