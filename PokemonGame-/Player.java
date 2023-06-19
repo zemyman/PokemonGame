@@ -98,7 +98,7 @@ public class Player extends Actor
         }
         if(isTouching(ForestToSpawnWarp.class)){
             Greenfoot.setWorld(new spawn());
-            setLocation(486,220);
+            getWorld().addObject(new Player(), 200, 200);
         }
         if(isTouching(PokemonCenterToSpawnWarp.class)){
             Greenfoot.setWorld(new spawn());

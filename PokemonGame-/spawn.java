@@ -29,7 +29,7 @@ public class spawn extends World
         //Greenfoot.setWorld(new topOfMap());
         addObject(new pokemoncentersprite(), 158, 117);
         //ADDING PLAYER
-        addObject(new Player(),410, 123);
+        //addObject(new Player(),410, 123);
         //BOUNDS
         addObject(new Bounds(),378, 288);
         addObject(new BoundsSide(),524, 141);

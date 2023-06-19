@@ -110,8 +110,6 @@ public class Forest extends World
         else{
             addObject(new PokeballSprite(),19,373);
         }
-            
-          }
+        }
     }
-    
 }
