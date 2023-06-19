@@ -5,5 +5,7 @@ comment1.params=pokemon
 comment1.target=void\ pokemonDisplay(int)
 comment2.params=
 comment2.target=Spawn()
+comment2.params=from
+comment2.target=spawn(java.lang.String)
 comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
 numComments=3

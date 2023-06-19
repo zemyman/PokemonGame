@@ -23,10 +23,10 @@ public class TopOfMap extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 309, 1, false); 
-        addObject(new Player(),413, 258);
+        addObject(new Player(),440, 270);
         addObject(new GymWarp(), 166, 157);
         addObject(new GymSprite(), 167, 87);
-        addObject(new SpawnWarp(), 440, 308);
+        addObject(new TopMapToSpawnWarp(), 440, 308);
         if(display == true){
         if(pokemon1 == 1){
             addObject(new Bulbasur(),26,289);

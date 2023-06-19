@@ -29,6 +29,9 @@ public class PokemonCenter1 extends World
         addObject(new Player(), 302, 276);
         addObject(new SpawnWarp(), 303, 341);
         addObject(new HealthbarPlayer(), 466, 369);
+        addObject(new Player(), 303, 303);
+        addObject(new PokemonCenterToSpawnWarp(), 303, 341);
+        addObject(new healthbarPlayer(), 466, 369);
         getBackground().drawImage(new GreenfootImage("spam L for life", 20, null, null), 369, 311);
          addObject(new Regen(), 0,0);
     }

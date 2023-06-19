@@ -24,6 +24,8 @@ public class Player extends Actor
          GreenfootImage south = new GreenfootImage("PlayerS.png");
        //Movement
       if(isTouching(SmallVBound.class)){
+        //Movement
+        if(isTouching(smallVBound.class)){
           if(DirectionV == "l"){
               setLocation(getX() +2 , getY() );
           }
@@ -91,12 +93,29 @@ public class Player extends Actor
         //updating the players posistion
         
         setLocation(getX() +  deltaX , getY() + deltaY);
-        if(isTouching(HealthPotion.class)){
+         if(isTouching(HealthPotion.class)){
         hasHealthPotion = true;
         TopOfMap.healthWillSpawn = false;
         removeTouching(HealthPotion.class);
-       }
-    
+        }
+        if(isTouching(ForestToSpawnWarp.class)){
+            Greenfoot.setWorld(new spawn("fromForest"));
+        }
+        if(isTouching(PokemonCenterToSpawnWarp.class)){
+            Greenfoot.setWorld(new spawn("fromPokemonCenter"));
+        }
+        if(isTouching(TopMapToSpawnWarp.class)){
+            Greenfoot.setWorld(new spawn("fromTopMap"));
+        }
+        if(isTouching(SpawnToForestWarp.class)){
+            Greenfoot.setWorld(new Forest());
+        }
+        if(isTouching(SpawnToTopMapWarp.class)){
+            Greenfoot.setWorld(new topOfMap());
+        }
+        if(isTouching(SpawnToPokemonCenterWarp.class)){
+            Greenfoot.setWorld(new PokemonCenter1());
+        }
     }
     //Method for sharing what the starter pokemon is
     //and for updating it accross worlds when they evolve.

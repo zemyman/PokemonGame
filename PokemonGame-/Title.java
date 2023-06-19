@@ -19,6 +19,8 @@ public class Title extends World
         super(600, 400, 1);
         addObject(new Titlescreen(), 300, 180);
         Spawn w = new Spawn();
+        addObject(new titlescreen(), 300, 180);
+        spawn w = new spawn("fromElse");
         if(Greenfoot.isKeyDown("Enter") ){
             Greenfoot.setWorld(w);
         }

@@ -23,13 +23,14 @@ public class Spawn extends World
      * 
      */
     public Spawn()
+    public spawn(String from)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
         //Greenfoot.setWorld(new topOfMap());
         addObject(new Pokemoncentersprite(), 158, 117);
         //ADDING PLAYER
-        addObject(new Player(),500, 163);
+        //addObject(new Player(),410, 123);
         //BOUNDS
         addObject(new Bounds(),378, 288);
         addObject(new BoundsSide(),524, 141);
@@ -45,6 +46,9 @@ public class Spawn extends World
         addObject(new TopMapWarp(),416,18);
         addObject(new ForestWarp(),486,259);
         addObject(new PokemonCenterTp(), 150, 151);
+        addObject(new SpawnToTopMapWarp(),430,0);
+        addObject(new SpawnToForestWarp(),486,259);
+        addObject(new SpawnToPokemonCenterWarp(), 158, 162);
         if(display = true){
             if(pokemon1 == 1){
             addObject(new Bulbasur(),21, 293);
@@ -82,6 +86,18 @@ public class Spawn extends World
             //addObject(new PokeballSprite(),98, 293);
             //addObject(new PokeballSprite(),61, 293);
             
+      }
+      if (from.equals("fromForest")){
+          addObject(new Player(),485, 223);
+      }
+      else if (from.equals("fromPokemonCenter")){
+          addObject(new Player(),159, 185);
+      }
+      else if (from.equals("fromTopMap")){
+          addObject(new Player(),430, 39);
+      }
+      else{
+          addObject(new Player(),410, 123);
       }
     }
     //Every pokemon has a number 
