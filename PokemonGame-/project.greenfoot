@@ -34,7 +34,6 @@ class.PokemonCenter1.image=d9m8djo-20dae9d0-97d6-4933-ac5e-2b6dc5590fe0.png
 class.PokemonCenterTp.image=blank.png
 class.Pokemoncentersprite.image=center.png
 class.SmallHbounds.image=TempBoundSmallH60x10.png
-class.SmallVBound.image=TempBoundSmallV60x10.png
 class.Spawn.image=BOTTOM_HALF_OF_MAP_631x316.png
 class.SpawnWarp.image=lol.png
 class.SquirltleFight.image=blank.png

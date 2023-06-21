@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TopOfMap extends World 
+public class TopOfMap extends World  
 {
     public static int pokemon1;
     public boolean display = true;

@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Spawn extends World
+public class Spawn extends World 
 {
     public boolean display = true;
     public boolean ball1 = true;
