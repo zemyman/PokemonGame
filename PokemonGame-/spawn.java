@@ -27,7 +27,7 @@ public class Spawn extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
         //Greenfoot.setWorld(new topOfMap());
-        addObject(new pokemoncentersprite(), 158, 117);
+        addObject(new Pokemoncentersprite(), 158, 117);
         //ADDING PLAYER
         //addObject(new Player(),410, 123);
         //BOUNDS
@@ -36,10 +36,10 @@ public class Spawn extends World
         addObject(new Bounds(),274, 228);
         addObject(new BoundsSide(),127, 135);
         addObject(new Bounds(),242, 30);
-        addObject(new smallVBound(),389, 4);
-        addObject(new smallVBound(),451, 256);
-        addObject(new smallVBound(),451, 198);
-        addObject(new smallVBound(),420, 200);
+        addObject(new SmallVBound(),389, 4);
+        addObject(new SmallVBound(),451, 256);
+        addObject(new SmallVBound(),451, 198);
+        addObject(new SmallVBound(),420, 200);
         addObject(new SmallHbounds(),434,170);
         //Waprs
         addObject(new SpawnToTopMapWarp(),430,0);

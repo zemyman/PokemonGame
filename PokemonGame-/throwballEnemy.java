@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class throwballEnemy extends Actor
+public class ThrowballEnemy extends Actor
 {
    
     GreenfootImage blank = new GreenfootImage("blank.png");
@@ -20,7 +20,7 @@ public class throwballEnemy extends Actor
     {
         
         setImage(blank);
-        if(isTouching(finalGymEnemy.class)){
+        if(isTouching(FinalGymEnemy.class)){
             setImage(ball);
             setLocation(getX()-1,getY()+1);
     }

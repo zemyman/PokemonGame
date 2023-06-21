@@ -24,12 +24,12 @@ public static void pokemonU1(int poke){
         super(600, 400, 1); 
         PlayerFight.finalfight = true;
         addObject(new PlayerFight(), 576, 329);
-        addObject(new throwBall(), 165, 374);
-        addObject(new finalGymEnemy(), 0, 63);
-        addObject(new throwballEnemy(), 455, 78);
+        addObject(new ThrowBall(), 165, 374);
+        addObject(new FinalGymEnemy(), 0, 63);
+        addObject(new ThrowballEnemy(), 455, 78);
         addObject(new GymCharmeleonFight(), 391,151);
-        addObject(new healthbarPlayer(),450,290);
-        addObject(new healthbarEnemy(),130,180);
+        addObject(new HealthbarPlayer(),450,290);
+        addObject(new HealthbarEnemy(),130,180);
         //for displaying pokemon in party and for battle
          if(display = true){
             if(pokemon1 == 1){

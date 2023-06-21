@@ -17,7 +17,7 @@ public class Start extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        addObject(new text1(),272, 138);
+        addObject(new Text1(),272, 138);
         addObject(new PokeballSprite(),175, 247);
         addObject(new PokeballSprite(),294, 247);
         addObject(new PokeballSprite(),427, 247);

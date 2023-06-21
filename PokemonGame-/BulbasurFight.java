@@ -27,14 +27,14 @@ public class BulbasurFight extends Bulbasur
          GreenfootImage[] images = {s1,s2, s3, s4,s5,s6,s7,B};
          //This is for when throwBall touches Bulbasur it goes through its animation 
          //and then gets rid of the ball
-         if(isTouching(throwBall.class)){
+         if(isTouching(ThrowBall.class)){
          do{
              
              setImage(images[x]);
              x++;
              Greenfoot.delay(4);
              if(x == 7){
-              getWorld().removeObjects(getWorld().getObjects(throwBall.class));
+              getWorld().removeObjects(getWorld().getObjects(ThrowBall.class));
              }
          }while(x < 7);
     }

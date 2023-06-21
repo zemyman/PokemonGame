@@ -23,7 +23,7 @@ public class Player extends Actor
          GreenfootImage east = new GreenfootImage("PlayerE.png");
          GreenfootImage south = new GreenfootImage("PlayerS.png");
         //Movement
-        if(isTouching(smallVBound.class)){
+        if(isTouching(SmallVBound.class)){
           if(DirectionV == "l"){
               setLocation(getX() +2 , getY() );
           }
@@ -93,7 +93,7 @@ public class Player extends Actor
         setLocation(getX() +  deltaX , getY() + deltaY);
          if(isTouching(HealthPotion.class)){
         hasHealthPotion = true;
-        topOfMap.healthWillSpawn = false;
+        TopMap.healthWillSpawn = false;
         removeTouching(HealthPotion.class);
         }
         if(isTouching(ForestToSpawnWarp.class)){
@@ -109,7 +109,7 @@ public class Player extends Actor
             Greenfoot.setWorld(new Forest());
         }
         if(isTouching(SpawnToTopMapWarp.class)){
-            Greenfoot.setWorld(new topOfMap());
+            Greenfoot.setWorld(new TopMap());
         }
         if(isTouching(SpawnToPokemonCenterWarp.class)){
             Greenfoot.setWorld(new PokemonCenter1());
@@ -127,7 +127,7 @@ public class Player extends Actor
         PlayerFight.pokemon1U(start);
        FinalFight.pokemonU1(start);
       GymWarp.pokemonDisplay(start);
-      topOfMap.pokemonDisplay(start);
+      TopMap.pokemonDisplay(start);
       //METHOD FOR SHARING POKEMON
     }
   }

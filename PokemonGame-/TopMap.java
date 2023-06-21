@@ -19,7 +19,7 @@ public class TopMap extends World
      * Constructor for objects of class topOfMap.
      * 
      */
-    public topOfMap()
+    public TopMap()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 309, 1, false); 
@@ -63,19 +63,19 @@ public class TopMap extends World
         }
     }
     //bounds
-    addObject(new smallVBound(),249,84);
-    addObject(new smallVBound(),108,120);
-    addObject(new smallVBound(),536,222);
-    addObject(new smallVBound(),421,119);
-    addObject(new smallVBound(),108,177);
-    addObject(new smallVBound(),549,161);
-    addObject(new smallVBound(),254,193);
-    addObject(new smallVBound(),383,305);
-    addObject(new smallVBound(),497,110);
-    addObject(new smallVBound(),354,276);
-    addObject(new smallVBound(),536,278);
-    addObject(new smallVBound(),421,176);
-    addObject(new smallVBound(),622,113);
+    addObject(new SmallVBound(),249,84);
+    addObject(new SmallVBound(),108,120);
+    addObject(new SmallVBound(),536,222);
+    addObject(new SmallVBound(),421,119);
+    addObject(new SmallVBound(),108,177);
+    addObject(new SmallVBound(),549,161);
+    addObject(new SmallVBound(),254,193);
+    addObject(new SmallVBound(),383,305);
+    addObject(new SmallVBound(),497,110);
+    addObject(new SmallVBound(),354,276);
+    addObject(new SmallVBound(),536,278);
+    addObject(new SmallVBound(),421,176);
+    addObject(new SmallVBound(),622,113);
     addObject(new BoundsSide(),343,287);
     addObject(new BoundsSide(),310,284);
     addObject(new SmallHbounds(),279,87);
