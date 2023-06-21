@@ -9,6 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TopMapToSpawnWarp extends Actor
 {
     public TopMapToSpawnWarp(){
-        //getImage().setTransparency(0);
+        getImage().setTransparency(0);
     }
 }

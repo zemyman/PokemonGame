@@ -9,6 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SpawnToForestWarp extends Actor
 {
     public SpawnToForestWarp(){
-        //getImage().setTransparency(0);
+        getImage().setTransparency(0);
     }
 }

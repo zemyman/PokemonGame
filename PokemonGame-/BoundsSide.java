@@ -14,7 +14,6 @@ public class BoundsSide extends Actor
      */
     public void act()
     {
-        // Add your action code here.
-        //getImage().setTransparency(0);
+        getImage().setTransparency(0);
     }
 }

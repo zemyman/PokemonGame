@@ -28,6 +28,6 @@ public class GymWarp extends Actor
            // Greenfoot.setWorld(w);
            //}
         }
-        //getImage().setTransparency(0);
+        getImage().setTransparency(0);
     }
 }
