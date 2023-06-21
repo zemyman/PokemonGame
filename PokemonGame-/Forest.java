@@ -60,7 +60,7 @@ public class Forest extends World
         addObject(new SmallVBound(),358, 166);
         addObject(new SmallVBound(),281, 166);
         addObject(new SmallVBound(),281, 58);
-        addObject(new SmallVBound(),300, 114);
+        addObject(new SmallVBound(),281, 114);
         
         addObject(new SmallHbounds(),134, 357);
         addObject(new SmallHbounds(),187, 300);
