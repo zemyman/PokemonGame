@@ -16,7 +16,7 @@ public class Tp2 extends Actor
     {
         // Add your action code here.
         if(Greenfoot.isKeyDown("e") ){
-            Spawn w = new Spawn();
+            spawn w = new spawn();
             Greenfoot.setWorld(w);
         }
         getImage().setTransparency(0);

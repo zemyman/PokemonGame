@@ -33,14 +33,14 @@ public class Forest extends World
         //adding bounds
         addObject(new BoundsSide(),259, 390);
         
-        addObject(new SmallVBound(),198, 88);
-        addObject(new SmallVBound(),202, 143);
-        addObject(new SmallVBound(),233, 133);
-        addObject(new SmallVBound(),153, 177);
-        addObject(new SmallVBound(),137, 214);
-        addObject(new SmallVBound(),91, 272);
-        addObject(new SmallVBound(),91, 328);
-        addObject(new SmallVBound(),162, 331);
+        addObject(new smallVBound(),198, 88);
+        addObject(new smallVBound(),202, 143);
+        addObject(new smallVBound(),233, 133);
+        addObject(new smallVBound(),153, 177);
+        addObject(new smallVBound(),137, 214);
+        addObject(new smallVBound(),91, 272);
+        addObject(new smallVBound(),91, 328);
+        addObject(new smallVBound(),162, 331);
         
          addObject(new SmallHbounds(),237,383);
         addObject(new SmallHbounds(),168, 58);
@@ -52,15 +52,15 @@ public class Forest extends World
         addObject(new SmallHbounds(),111, 240);
         addObject(new SmallHbounds(),81, 357);
         
-        addObject(new SmallVBound(),216, 327);
-        addObject(new SmallVBound(),216, 372);
-        addObject(new SmallVBound(),258, 393);
-        addObject(new SmallVBound(),415, 216);
-        addObject(new SmallVBound(),414, 168);
-        addObject(new SmallVBound(),358, 166);
-        addObject(new SmallVBound(),281, 166);
-        addObject(new SmallVBound(),281, 58);
-        addObject(new SmallVBound(),281, 114);
+        addObject(new smallVBound(),216, 327);
+        addObject(new smallVBound(),216, 372);
+        addObject(new smallVBound(),258, 393);
+        addObject(new smallVBound(),415, 216);
+        addObject(new smallVBound(),414, 168);
+        addObject(new smallVBound(),358, 166);
+        addObject(new smallVBound(),281, 166);
+        addObject(new smallVBound(),281, 58);
+        addObject(new smallVBound(),281, 114);
         
         addObject(new SmallHbounds(),134, 357);
         addObject(new SmallHbounds(),187, 300);

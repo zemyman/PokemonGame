@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Regen extends Actor
+public class regen extends Actor
 {
     /**
      * Act - do whatever the regen wants to do. This method is called whenever

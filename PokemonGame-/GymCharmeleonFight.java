@@ -27,14 +27,14 @@ public class GymCharmeleonFight extends Charmeleon
          GreenfootImage[] images = {s1,s2, s3, s4,s5,s6,s7,B,B,B,B};
          //This is for when throwBall touches The Gym Leaders Charmeleon it goes through its animation 
          //and then gets rid of the ball
-         if(isTouching(ThrowballEnemy.class)){
+         if(isTouching(throwballEnemy.class)){
          do{
              x++;
              setImage(images[x]);
              
              Greenfoot.delay(4);
              if(x == 6){
-              getWorld().removeObjects(getWorld().getObjects(ThrowballEnemy.class));
+              getWorld().removeObjects(getWorld().getObjects(throwballEnemy.class));
              }
          }while(x < 7);
     }

@@ -22,7 +22,7 @@ public class FinalWin extends World
         getBackground().drawImage(new GreenfootImage("PRESS E TO CONTINUE", 20, null, null), 210, 240);
         getBackground().drawImage(new GreenfootImage("HERES YOUR HEAT BADGE, THANK YOU FOR PLAYING ", 20, null, null), 120, 220);
         displayPoke();
-        addObject( new FlameBadge(),299,333);
+        addObject( new flameBadge(),299,333);
         
         addObject(new Tp2(),589,7);
     }

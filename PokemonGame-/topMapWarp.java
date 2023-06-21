@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TopMapWarp extends Actor
+public class topMapWarp extends Actor
 {
     /**
      * Act - do whatever the topMapWarp wants to do. This method is called whenever
@@ -15,7 +15,7 @@ public class TopMapWarp extends Actor
     public void act()
     {
         if(isTouching(Player.class)){
-            TopOfMap w = new TopOfMap();
+            topOfMap w = new topOfMap();
             Greenfoot.setWorld(w);
             
         }

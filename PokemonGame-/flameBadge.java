@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FlameBadge extends Actor
+public class flameBadge extends Actor
 {
     /**
      * Act - do whatever the flameBadge wants to do. This method is called whenever

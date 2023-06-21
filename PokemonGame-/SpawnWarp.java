@@ -16,7 +16,7 @@ public class SpawnWarp extends Actor
     {
         //changes world when touching player
         if(isTouching(Player.class)){
-            Spawn w = new Spawn();
+            spawn w = new spawn();
             Greenfoot.setWorld(w);
             
         }

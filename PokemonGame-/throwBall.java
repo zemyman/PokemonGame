@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ThrowBall extends Actor
+public class throwBall extends Actor
 {
    
     GreenfootImage blank = new GreenfootImage("blank.png");

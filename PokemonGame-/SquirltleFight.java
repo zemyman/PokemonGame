@@ -26,14 +26,14 @@ public class SquirltleFight extends Actor
          GreenfootImage[] images = {s1, s2, s3, s4,s5,s6,s7,sf};
          //This is for when throwBall touches Squirtle it goes through its animation 
          //and then gets rid of the ball
-         if(isTouching(ThrowBall.class)){
+         if(isTouching(throwBall.class)){
          do{
              
              setImage(images[x]);
              x++;
              Greenfoot.delay(4);
              if(x == 7){
-              getWorld().removeObjects(getWorld().getObjects(ThrowBall.class));
+              getWorld().removeObjects(getWorld().getObjects(throwBall.class));
              }
          }while(x < 7);
     }
