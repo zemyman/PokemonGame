@@ -6,7 +6,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ForestWarp extends Actor{
+public class ForestWarp extends Actor 
+{
     /**
      * Act - do whatever the forestWarp wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
