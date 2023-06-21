@@ -25,32 +25,32 @@ public class Player extends Actor
        //Movement
       if(isTouching(SmallVBound.class)){
           if(DirectionV == "l"){
-              setLocation(getX() +2 , getY() );
+              setLocation(getX() +1 , getY() );
           }
           if(DirectionV == "r"){
-              setLocation(getX() -2 , getY() );
+              setLocation(getX() -1 , getY() );
           }
         }
         if(isTouching(SmallHbounds.class)){
            if(DirectionH == "n"){
-                setLocation(getX()  , getY() + 2);
+                setLocation(getX()  , getY() + 1);
             }if(DirectionH =="s"){
-                setLocation(getX()  , getY() - 2);
+                setLocation(getX()  , getY() - 1);
             }
         }
         if(isTouching(Bounds.class)){
            if(DirectionH == "n"){
-                setLocation(getX()  , getY() + 2);
+                setLocation(getX()  , getY() + 1);
             }if(DirectionH =="s"){
-                setLocation(getX()  , getY() - 2);
+                setLocation(getX()  , getY() - 1);
             }
         }
         if(isTouching(BoundsSide.class)){
              if(DirectionV == "l"){
-              setLocation(getX() +2 , getY() );
+              setLocation(getX() +1 , getY() );
           }
           if(DirectionV == "r"){
-              setLocation(getX() -2 , getY() );
+              setLocation(getX() -1 , getY() );
           }
         }
        
