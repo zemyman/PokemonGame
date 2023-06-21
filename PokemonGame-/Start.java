@@ -21,7 +21,7 @@ public class Start extends World
         addObject(new PokeballSprite(),175, 247);
         addObject(new PokeballSprite(),294, 247);
         addObject(new PokeballSprite(),427, 247);
-        spawn w = new spawn("fromElse");
+        Spawn w = new Spawn("fromElse");
         addObject(new Charmander(),296, 290);
         addObject(new Bulbasur(),176, 290);
         addObject(new Squirtle(),432, 290);

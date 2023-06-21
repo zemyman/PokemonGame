@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class spawn extends World
+public class Spawn extends World
 {
     public boolean display = true;
     public boolean ball1 = true;
@@ -22,7 +22,7 @@ public class spawn extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public spawn(String from)
+    public Spawn(String from)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(631, 316, 1, false); 
