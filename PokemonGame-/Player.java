@@ -9,11 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends Actor
 {
     //ALL FOR MOVEMENT
-    public int deltaX ;
-    public int deltaY;
-    public int speed = 1;
-    public String DirectionV;
-    public String DirectionH;
+    private int deltaX ;
+    private int deltaY;
+    private int speed = 1;
+    private String DirectionV;
+    private String DirectionH;
     public static boolean hasHealthPotion = false;
     public void act(){
     
