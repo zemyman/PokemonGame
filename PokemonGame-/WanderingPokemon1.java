@@ -15,14 +15,22 @@ public class WanderingPokemon1 extends Actor
      */
     public void act()
     {
-        Battle w = new Battle();
+        
         
         if(isTouching(Player.class) && x == 1){
             
-            
-                Greenfoot.setWorld(w);
+            whenTuched();
+                
             
         }
         getImage().setTransparency(0);
+    }
+    public void changeWorld(){
+        Battle w = new Battle();
+        Greenfoot.setWorld(w);
+        getImage().setTransparency(0);
+    }
+    public void whenTuched(){
+        changeWorld();
     }
 }

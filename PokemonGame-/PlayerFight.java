@@ -21,6 +21,7 @@ public class PlayerFight extends Actor
         public static int xp = 0;
         public static int finalxp = 0;
          public static boolean finalfight;
+         public int attack;
        public static void pokemon1U(int poke){
            //Method to get players pokemon from player class
         pokemon1 = poke;
@@ -40,14 +41,17 @@ public class PlayerFight extends Actor
               //playerA# are methods for doing dammage
               playerA1();
              turn = 1;
+             attack = 1;
           }
            else if(Greenfoot.isKeyDown("t")){
              playerA2();
              turn = 1;
+             attack = 2;
           }
            else if(Greenfoot.isKeyDown("y") ){
              playerA3();
              turn = 1;
+             attack = 3;
           }
           else if(Greenfoot.isKeyDown("g") && Player.hasHealthPotion){
               playerHeals();

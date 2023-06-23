@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class WanderingPokemon2 extends Actor
+public class WanderingPokemon2 extends WanderingPokemon1
 {
     public static int x;
     /**
@@ -15,14 +15,15 @@ public class WanderingPokemon2 extends Actor
      */
     public void act()
     {
-        Battle w = new Battle();
+        
         
         if(isTouching(Player.class) && x == 2){
             
             
-                Greenfoot.setWorld(w);
+                whenTuched();
             
         }
         getImage().setTransparency(0);
     }
+    
 }
