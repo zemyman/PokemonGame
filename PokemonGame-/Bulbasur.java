@@ -19,6 +19,6 @@ public class Bulbasur extends Actor
     public void setSize(int x, int y){
         GreenfootImage image = getImage();  
         image.scale(x, y);
-        setImage(image);
+        setImage(image); 
     }
 }
