@@ -16,4 +16,9 @@ public class Squirtle extends Actor
     {
         // Add your action code here.
     }
+    public void setSize(int x, int y){
+        GreenfootImage image = getImage();  
+        image.scale(x, y);
+        setImage(image);
+    }
 }

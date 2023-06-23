@@ -16,4 +16,9 @@ public class Charmander extends Actor
     {
         // Add your action code here.
     }
+    public void setSize(){
+        GreenfootImage image = getImage();  
+        image.scale(50, 50);
+        setImage(image);
+    }
 }

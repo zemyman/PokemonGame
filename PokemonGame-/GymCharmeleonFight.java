@@ -40,9 +40,5 @@ public class GymCharmeleonFight extends Charmeleon
     }
     setSize();
     }
-    public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(70,70);
-        setImage(image);
-    }
+   
 }

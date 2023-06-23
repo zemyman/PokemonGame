@@ -41,9 +41,5 @@ public class CharizardFight extends Charizard
     }
     setSize();
 }
-public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(70,70);
-        setImage(image);
-    }
+
 }

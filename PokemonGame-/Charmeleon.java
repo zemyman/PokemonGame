@@ -17,9 +17,5 @@ public class Charmeleon extends Charmander
         // Add your action code here.
          setSize();
     }
-    public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(50, 50);
-        setImage(image);
-    }
+    
 }

@@ -15,11 +15,7 @@ public class Venusaur extends Ivysaur
     public void act()
     {
         // Add your action code here.
-      setSize();
+      setSize(50,50);
     }
-    public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(50, 50);
-        setImage(image);
-    }
+    
 }

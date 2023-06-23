@@ -15,10 +15,7 @@ public class Charizard extends Charmeleon
     public void act()
     {
         // Add your action code here.
-     setSize();
-    }public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(55, 50);
-        setImage(image);
-    }
+      setSize();
+    
+}
 }

@@ -38,11 +38,7 @@ public class BlastoiseFight extends Blastoise
              }
          }while(x < 7);
     }
-    setSize();
+    setSize(70,70);
     }
-    public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(70,70);
-        setImage(image);
-    }
+    
 }

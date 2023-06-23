@@ -15,10 +15,6 @@ public class Wartortle extends Squirtle
     public void act()
     {
         // Add your action code here.
-     setSize();
-    }public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(55, 50);
-        setImage(image);
+     setSize(55,50);
     }
 }

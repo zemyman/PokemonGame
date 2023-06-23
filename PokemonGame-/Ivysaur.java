@@ -15,12 +15,8 @@ public class Ivysaur extends Bulbasur
     public void act()
     {
         // Add your action code here.
-      setSize();
+      setSize(50,50);
     }
     //method for seting the size of the actor
-    public void setSize(){
-        GreenfootImage image = getImage();  
-        image.scale(50, 50);
-        setImage(image);
-    }
+    
 }
